@@ -25,8 +25,8 @@ void loop() {
   // put your main code here, to run repeatedly:
  digitalWrite(Y1, HIGH);
  digitalWrite(Y2, LOW);
- delay(500);
+ delay(10000);
  digitalWrite(Y1,LOW);
  digitalWrite(Y2,HIGH);
- delay(500);
+ delay(10000);
 }
