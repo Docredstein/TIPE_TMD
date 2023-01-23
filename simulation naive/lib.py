@@ -39,12 +39,12 @@ class barre(Object) :
         
         self.parent = parent
         self.fixe = fixe
-        self.absolute_angle = self.get_absolute_angle()
+        self.absolute_angle = 0
     def __repr__(self) -> str:
         return f"Barre id={self.id}, origin = {self.origin}, relative_angle = {self.angle}, lenght = {self.length} parent :\n{self.parent}"
     def get_absolute_angle(self) -> float:
         if self.parent == None : 
             return self.angle 
-        return self.angle + self.angle_offset + self.parent.get
+        return self.angle + self.angle_offset + self.parent.get_absolute_angle()
     
         
