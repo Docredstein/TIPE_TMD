@@ -1,5 +1,105 @@
 (kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid 2d0c47c4-47c5-4de1-8fc0-624ae5f5a443)
+
   (paper "A4")
-  (lib_symbols)
-  (symbol_instances)
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 39.37 53.34) (size 35.56 19.05) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 3aa1ae1c-fc95-44d6-a780-d2d5cd75958a)
+    (property "Sheet name" "Sensor" (id 0) (at 39.37 52.6284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Sensor.kicad_sch" (id 1) (at 39.37 72.9746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 124.46 40.64) (size 36.83 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d)
+    (property "Sheet name" "Microcontrolleur" (id 0) (at 124.46 39.9284 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "micro.kicad_sch" (id 1) (at 124.46 66.6246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 124.46 87.63) (size 33.02 22.86) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 528e0ec4-2c4c-4af9-bc17-2bf3e40fdcc0)
+    (property "Sheet name" "Power" (id 0) (at 124.46 86.9184 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Power.kicad_sch" (id 1) (at 124.46 111.0746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet (at 213.36 45.72) (size 45.72 27.94) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 6b5ce9fc-8ebc-4da3-987b-51649fd5b4ce)
+    (property "Sheet name" "Connector" (id 0) (at 213.36 45.0084 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheet file" "Connector.kicad_sch" (id 1) (at 213.36 74.2446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/3aa1ae1c-fc95-44d6-a780-d2d5cd75958a" (page "3"))
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d" (page "3"))
+    (path "/6b5ce9fc-8ebc-4da3-987b-51649fd5b4ce" (page "4"))
+    (path "/528e0ec4-2c4c-4af9-bc17-2bf3e40fdcc0" (page "5"))
+  )
+
+  (symbol_instances
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/577d9f18-41c6-4e8f-a3e6-aa640fffffc1"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/72ce4358-22ae-4831-9953-1bb0de2be88c"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/99061e1d-d6e4-4498-9381-6ff88c9ec1dc"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/9e639c2e-7b12-42d7-ad7d-8f4c3898e5af"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/ae9981b6-897c-4e9f-b186-9c9916508f72"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/b7fa75dc-5d50-4cd7-bcb7-8886bbab4507"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/bd66dc24-18a7-45f7-ab69-3ec2499084e3"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/dc34d90f-910e-4ac3-823f-2cc5f75e656d"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/f4f518e0-3f44-4d1e-a5b9-c98c50050036"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/ff71db76-c654-4e42-b2f1-382a0309816b"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/eb8305bb-4642-4cae-acd6-691dd65a65cb"
+      (reference "SW?") (unit 1) (value "SW_MEC_5G") (footprint "Library:Tactile Button")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/a4512bf6-8275-4e90-8ee4-717668a253dc"
+      (reference "U?") (unit 1) (value "PicoW") (footprint "RPi_PicoW:RPi_Pico_SMD_TH")
+    )
+  )
 )
