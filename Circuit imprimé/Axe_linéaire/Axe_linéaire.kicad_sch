@@ -65,6 +65,9 @@
   )
 
   (symbol_instances
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/166381aa-3468-4d61-ab55-ebd0493cbbcf"
+      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
+    )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/577d9f18-41c6-4e8f-a3e6-aa640fffffc1"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
     )
@@ -76,6 +79,9 @@
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/9e639c2e-7b12-42d7-ad7d-8f4c3898e5af"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/a0a06c84-ea81-475d-a458-4883df2e08dc"
+      (reference "#PWR?") (unit 1) (value "+VDC") (footprint "")
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/ae9981b6-897c-4e9f-b186-9c9916508f72"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
@@ -94,6 +100,9 @@
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/ff71db76-c654-4e42-b2f1-382a0309816b"
       (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/7c5aabe7-8d7b-40e4-a352-5f8f228a89f9"
+      (reference "Q?") (unit 1) (value "LP2301LT1G") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/eb8305bb-4642-4cae-acd6-691dd65a65cb"
       (reference "SW?") (unit 1) (value "SW_MEC_5G") (footprint "Library:Tactile Button")
