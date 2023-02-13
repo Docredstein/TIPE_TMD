@@ -65,50 +65,50 @@
   )
 
   (symbol_instances
-    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/166381aa-3468-4d61-ab55-ebd0493cbbcf"
-      (reference "#PWR?") (unit 1) (value "+5V") (footprint "")
-    )
-    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/577d9f18-41c6-4e8f-a3e6-aa640fffffc1"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/72ce4358-22ae-4831-9953-1bb0de2be88c"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/99061e1d-d6e4-4498-9381-6ff88c9ec1dc"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/9e639c2e-7b12-42d7-ad7d-8f4c3898e5af"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/a0a06c84-ea81-475d-a458-4883df2e08dc"
-      (reference "#PWR?") (unit 1) (value "+VDC") (footprint "")
-    )
-    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/ae9981b6-897c-4e9f-b186-9c9916508f72"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/b7fa75dc-5d50-4cd7-bcb7-8886bbab4507"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/dc34d90f-910e-4ac3-823f-2cc5f75e656d"
+      (reference "#PWR01") (unit 1) (value "GND") (footprint "")
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/bd66dc24-18a7-45f7-ab69-3ec2499084e3"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR02") (unit 1) (value "GND") (footprint "")
     )
-    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/dc34d90f-910e-4ac3-823f-2cc5f75e656d"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/b7fa75dc-5d50-4cd7-bcb7-8886bbab4507"
+      (reference "#PWR03") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/9e639c2e-7b12-42d7-ad7d-8f4c3898e5af"
+      (reference "#PWR04") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/ae9981b6-897c-4e9f-b186-9c9916508f72"
+      (reference "#PWR05") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/a0a06c84-ea81-475d-a458-4883df2e08dc"
+      (reference "#PWR06") (unit 1) (value "+VDC") (footprint "")
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/f4f518e0-3f44-4d1e-a5b9-c98c50050036"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR07") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/577d9f18-41c6-4e8f-a3e6-aa640fffffc1"
+      (reference "#PWR08") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/99061e1d-d6e4-4498-9381-6ff88c9ec1dc"
+      (reference "#PWR09") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/72ce4358-22ae-4831-9953-1bb0de2be88c"
+      (reference "#PWR010") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/166381aa-3468-4d61-ab55-ebd0493cbbcf"
+      (reference "#PWR011") (unit 1) (value "+5V") (footprint "")
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/ff71db76-c654-4e42-b2f1-382a0309816b"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+      (reference "#PWR012") (unit 1) (value "GND") (footprint "")
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/7c5aabe7-8d7b-40e4-a352-5f8f228a89f9"
-      (reference "Q?") (unit 1) (value "LP2301LT1G") (footprint "Package_TO_SOT_SMD:SOT-23")
+      (reference "Q1") (unit 1) (value "LP2301LT1G") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/eb8305bb-4642-4cae-acd6-691dd65a65cb"
-      (reference "SW?") (unit 1) (value "SW_MEC_5G") (footprint "Library:Tactile Button")
+      (reference "SW1") (unit 1) (value "SW_MEC_5G") (footprint "Library:Tactile Button")
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/a4512bf6-8275-4e90-8ee4-717668a253dc"
-      (reference "U?") (unit 1) (value "PicoW") (footprint "RPi_PicoW:RPi_Pico_SMD_TH")
+      (reference "U1") (unit 1) (value "PicoW") (footprint "RPi_PicoW:RPi_Pico_SMD_TH")
     )
   )
 )
