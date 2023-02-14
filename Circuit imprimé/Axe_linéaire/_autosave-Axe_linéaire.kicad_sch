@@ -4,6 +4,12 @@
 
   (paper "A4")
 
+  (title_block
+    (title "TMD Mainboard")
+    (rev "Rev 0")
+    (company "None")
+  )
+
   (lib_symbols
   )
 
@@ -194,6 +200,9 @@
     (path "/6b5ce9fc-8ebc-4da3-987b-51649fd5b4ce/53f17c12-3402-4c7d-89df-b1b2bbebc146"
       (reference "#PWR043") (unit 1) (value "GND") (footprint "")
     )
+    (path "/6b5ce9fc-8ebc-4da3-987b-51649fd5b4ce/2a935547-dd82-4831-8abf-04c9e2ba43d3"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
     (path "/6b5ce9fc-8ebc-4da3-987b-51649fd5b4ce/62feba04-9f8f-4dd6-aeb7-75c6ed9e8bb0"
       (reference "#PWR?") (unit 1) (value "+3V3") (footprint "")
     )
@@ -283,6 +292,21 @@
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/eb8305bb-4642-4cae-acd6-691dd65a65cb"
       (reference "SW1") (unit 1) (value "RESET") (footprint "Library:Tactile Button")
+    )
+    (path "/3aa1ae1c-fc95-44d6-a780-d2d5cd75958a/4dc15c19-d450-4de9-9733-735f5f43c521"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "")
+    )
+    (path "/3aa1ae1c-fc95-44d6-a780-d2d5cd75958a/b95c4f39-8f60-43b5-ac5e-e851f9a0efc2"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/c606cecf-f171-4d92-9b25-bd7157915c7d"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "")
+    )
+    (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/fb47845c-b09b-4b66-bfdd-5d5e4bf7bb84"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "")
+    )
+    (path "/3aa1ae1c-fc95-44d6-a780-d2d5cd75958a/fc65205c-5dd3-4027-b430-f19433f336f9"
+      (reference "TP?") (unit 1) (value "TestPoint") (footprint "")
     )
     (path "/47a491be-de9b-4ae9-9dd6-c72d5e2e7b6d/a4512bf6-8275-4e90-8ee4-717668a253dc"
       (reference "U1") (unit 1) (value "PicoW") (footprint "RPi_PicoW:RPi_Pico_SMD_TH")
