@@ -2623,7 +2623,7 @@
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid eb8305bb-4642-4cae-acd6-691dd65a65cb)
     (property "Reference" "SW1" (id 0) (at 172.72 62.23 0))
-    (property "Value" "SW_MEC_5G" (id 1) (at 172.72 64.77 0))
+    (property "Value" "RESET" (id 1) (at 172.72 64.77 0))
     (property "Footprint" "Library:Tactile Button" (id 2) (at 172.72 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
