@@ -1,0 +1,78 @@
+18439566582805
+Library
+Cap 100nf 0805
+
+
+0
+2
+2
+Library
+FPC 2x7 p=1mm
+
+
+0
+16
+15
+Library
+ICM42670P
+14 Lead LGA (2.5x3x0.76)
+Integrated Circuit
+0
+14
+14
+Library
+L6225DTR
+SO-20 mechanical data
+Integrated Circuit
+0
+20
+20
+Library
+LGA-14_2.5X3X0.86_
+LGA-14(2.5x3x0.86)
+Integrated Circuit
+0
+14
+14
+Library
+SOD223
+
+
+0
+2
+2
+Library
+SOIC127P1032X265-20N
+SO-20 mechanical data
+Integrated Circuit
+0
+20
+20
+Library
+Tactile Button
+
+
+0
+4
+4
+Library
+UV_LED
+
+
+0
+2
+2
+Library
+Vishay TCUT1350X01
+
+
+0
+6
+6
+Library
+ferrite Bead
+
+
+0
+2
+2
