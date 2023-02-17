@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP L6225DTR
+D STMicroelectronics L6225DTR, Full Bridge Motor Driver, Bipolar Stepping Motor, Dual or Quad DC Motor, 20-Pin SOIC
+K
+F https://componentsearchengine.com/Datasheets/1/L6225DTR.pdf
+$ENDCMP
+#
+#End Doc Library
