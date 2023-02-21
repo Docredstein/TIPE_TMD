@@ -1,0 +1,37 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: D:/CPGE/PSI/TIPE/Circuit imprimé/firmware/firmware/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-9n2ef7
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_fe87b\fast && 	"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_fe87b.dir\build.make /nologo -L                  CMakeFiles\cmTC_fe87b.dir\build
+Building C object CMakeFiles/cmTC_fe87b.dir/CMakeCCompilerABI.c.obj
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_fe87b.dir\CMakeCCompilerABI.c.obj.d --working-dir="D:\CPGE\PSI\TIPE\Circuit imprimÚ\firmware\firmware\build\elf2uf2\CMakeFiles\CMakeScratch\TryCompile-9n2ef7" --filter-prefix="Remarqueá: inclusion du fichierá:  " -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx64\x64\cl.exe @C:\Users\franc\AppData\Local\Temp\nm665F.tmp
+CMakeCCompilerABI.c
+Linking C executable cmTC_fe87b.exe
+	"C:\Program Files\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_fe87b.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x64\mt.exe --manifests -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_fe87b.dir\objects1 @C:\Users\franc\AppData\Local\Temp\nm67D7.tmp
+LINK Pass 1: command "C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_fe87b.dir\objects1 /out:cmTC_fe87b.exe /implib:cmTC_fe87b.lib /pdb:D:\CPGE\PSI\TIPE\Circuit imprim?\firmware\firmware\build\elf2uf2\CMakeFiles\CMakeScratch\TryCompile-9n2ef7\cmTC_fe87b.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_fe87b.dir/intermediate.manifest CMakeFiles\cmTC_fe87b.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: erreur lors de l'écriture dans la base de données 'D:\CPGE\PSI\TIPE\Circuit imprim?\firmware\firmware\build\elf2uf2\CMakeFiles\CMakeScratch\TryCompile-9n2ef7\cmTC_fe87b.pdb' du programme ; vérifiez l'espace disque, le chemin d'accès ou les privilèges
+NMAKE : fatal error U1077: '"C:\Program Files\CMake\bin\cmake.exe"'á: code retour '0xffffffff'
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64\nmake.exe"'á: code retour '0x2'
+Stop.
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/CPGE/PSI/TIPE/Circuit imprimé/firmware/firmware/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-qv66nf
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_b81bd\fast && 	"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64\nmake.exe"  -f CMakeFiles\cmTC_b81bd.dir\build.make /nologo -L                  CMakeFiles\cmTC_b81bd.dir\build
+Building C object CMakeFiles/cmTC_b81bd.dir/testCCompiler.c.obj
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_b81bd.dir\testCCompiler.c.obj.d --working-dir="D:\CPGE\PSI\TIPE\Circuit imprimÚ\firmware\firmware\build\elf2uf2\CMakeFiles\CMakeScratch\TryCompile-qv66nf" --filter-prefix="Remarqueá: inclusion du fichierá:  " -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx64\x64\cl.exe @C:\Users\franc\AppData\Local\Temp\nm68C1.tmp
+testCCompiler.c
+Linking C executable cmTC_b81bd.exe
+	"C:\Program Files\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_b81bd.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x64\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x64\mt.exe --manifests -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_b81bd.dir\objects1 @C:\Users\franc\AppData\Local\Temp\nm6920.tmp
+LINK Pass 1: command "C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx64\x64\link.exe /nologo @CMakeFiles\cmTC_b81bd.dir\objects1 /out:cmTC_b81bd.exe /implib:cmTC_b81bd.lib /pdb:D:\CPGE\PSI\TIPE\Circuit imprim?\firmware\firmware\build\elf2uf2\CMakeFiles\CMakeScratch\TryCompile-qv66nf\cmTC_b81bd.pdb /version:0.0 /machine:x64 /debug /INCREMENTAL /subsystem:console kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTFILE:CMakeFiles\cmTC_b81bd.dir/intermediate.manifest CMakeFiles\cmTC_b81bd.dir/manifest.res" failed (exit code 1201) with the following output:
+LINK : fatal error LNK1201: erreur lors de l'écriture dans la base de données 'D:\CPGE\PSI\TIPE\Circuit imprim?\firmware\firmware\build\elf2uf2\CMakeFiles\CMakeScratch\TryCompile-qv66nf\cmTC_b81bd.pdb' du programme ; vérifiez l'espace disque, le chemin d'accès ou les privilèges
+NMAKE : fatal error U1077: '"C:\Program Files\CMake\bin\cmake.exe"'á: code retour '0xffffffff'
+Stop.
+NMAKE : fatal error U1077: '"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX64\x64\nmake.exe"'á: code retour '0x2'
+Stop.
+
+
+
