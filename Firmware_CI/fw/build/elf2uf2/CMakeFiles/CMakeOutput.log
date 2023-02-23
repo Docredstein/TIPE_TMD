@@ -1,0 +1,73 @@
+The system is: Windows - 10.0.19045 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Compilateur d'optimisation Microsoft (R) C/C++ version 19.34.31937 pour x86
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.34.31937.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "D:/CPGE/PSI/TIPE/Firmware_CI/fw/build/elf2uf2/CMakeFiles/3.25.1/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Compilateur d'optimisation Microsoft (R) C/C++ version 19.34.31937 pour x86
+Copyright (C) Microsoft Corporation. Tous droits réservés.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.34.31937.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "D:/CPGE/PSI/TIPE/Firmware_CI/fw/build/elf2uf2/CMakeFiles/3.25.1/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: D:/CPGE/PSI/TIPE/Firmware_CI/fw/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-xiwkoi
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_3b3bf\fast && 	"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_3b3bf.dir\build.make /nologo -L                  CMakeFiles\cmTC_3b3bf.dir\build
+Building C object CMakeFiles/cmTC_3b3bf.dir/CMakeCCompilerABI.c.obj
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_3b3bf.dir\CMakeCCompilerABI.c.obj.d --working-dir=D:\CPGE\PSI\TIPE\Firmware_CI\fw\build\elf2uf2\CMakeFiles\CMakeScratch\TryCompile-xiwkoi --filter-prefix="Remarqueá: inclusion du fichierá:  " -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx86\x86\cl.exe @C:\Users\franc\AppData\Local\Temp\nmC967.tmp
+CMakeCCompilerABI.c
+Linking C executable cmTC_3b3bf.exe
+	"C:\Program Files\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_3b3bf.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\mt.exe --manifests -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_3b3bf.dir\objects1 @C:\Users\franc\AppData\Local\Temp\nmC9D6.tmp
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: D:/CPGE/PSI/TIPE/Firmware_CI/fw/build/elf2uf2/CMakeFiles/CMakeScratch/TryCompile-0krgvr
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_43bf4\fast && 	"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_43bf4.dir\build.make /nologo -L                  CMakeFiles\cmTC_43bf4.dir\build
+Building CXX object CMakeFiles/cmTC_43bf4.dir/CMakeCXXCompilerABI.cpp.obj
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_43bf4.dir\CMakeCXXCompilerABI.cpp.obj.d --working-dir=D:\CPGE\PSI\TIPE\Firmware_CI\fw\build\elf2uf2\CMakeFiles\CMakeScratch\TryCompile-0krgvr --filter-prefix="Remarqueá: inclusion du fichierá:  " -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx86\x86\cl.exe @C:\Users\franc\AppData\Local\Temp\nmCD20.tmp
+CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_43bf4.exe
+	"C:\Program Files\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_43bf4.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100220~1.0\x86\mt.exe --manifests -- C:\PROGRA~1\MIB055~1\2022\COMMUN~1\VC\Tools\MSVC\1434~1.319\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_43bf4.dir\objects1 @C:\Users\franc\AppData\Local\Temp\nmCD9E.tmp
+
+
+
