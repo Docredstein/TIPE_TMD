@@ -1,3 +1,0 @@
-D:/CPGE/PSI/TIPE/Firmware_CI/fw/build/pioasm/CMakeFiles/pioasm.dir
-D:/CPGE/PSI/TIPE/Firmware_CI/fw/build/pioasm/CMakeFiles/edit_cache.dir
-D:/CPGE/PSI/TIPE/Firmware_CI/fw/build/pioasm/CMakeFiles/rebuild_cache.dir
