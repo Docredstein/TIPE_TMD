@@ -9,12 +9,15 @@
 #include "hardware/watchdog.h"
 #include "hardware/clocks.h"
 #include "pico/cyw43_arch.h"
+#include "pico/multicore.h"
+#include "lsm6ds3tr-c_reg.h"
 
+#include "Motor_Control.h"
 // SPI Defines
 // We are going to use SPI 0, and allocate it to the following GPIO pins
 // Pins can be changed, see the GPIO function select table in the datasheet for information on GPIO assignments
 #define SPI_PORT spi0
-#define PIN_MISO 16
+#define PIN_MISO 16 
 #define PIN_CS   17
 #define PIN_SCK  18
 #define PIN_MOSI 19
@@ -30,13 +33,31 @@
 int64_t alarm_callback(alarm_id_t id, void *user_data) {
     // Put your timeout handler code in here
     return 0;
+
+    
 }
+
+static int32_t platform_write(void *handle, uint8_t Reg, const uint8_t *Bufp, uint16_t len) {
+return 0;
+}
+static int32_t platform_read(void *handle, uint8_t Reg, uint8_t *Bufp, uint16_t len) {
+return 0;
+}
+stmdev_ctx_t dev_ctx; 
+static void platform_init(void);
+
+//Core 0 : sensor read/serial com/wifi?
+//Core 1 : Motor control
 
 
 
 int main()
 {
     stdio_init_all();
+    dev_ctx.write_reg = &platform_write;
+    dev_ctx.read_reg = &platform_read;
+    dev_ctx.handle= i2c0 ;
+
 
     // SPI initialisation. This example will use SPI at 1MHz.
     spi_init(SPI_PORT, 1000*1000);
@@ -76,5 +97,20 @@ int main()
 
     puts("Hello, world!");
 
+
+    while(1) {
+
+    }
     return 0;
+}
+
+
+void core1_entry() {
+    float integral_error = 0;
+    float last_error_Value =0;
+
+
+    while(1) {
+        
+    }
 }

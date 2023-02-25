@@ -42,13 +42,17 @@ target_link_libraries(fw
         pico_stdlib)
 
 # Add the standard include files to the build
-target_include_directories(fw PRIVATE
+target_include_directories(fw PUBLIC
   ${CMAKE_CURRENT_LIST_DIR}
   ${CMAKE_CURRENT_LIST_DIR}/.. # for our common lwipopts or any other standard includes, if required
 )
+add_library(Motor_Control INTERFACE)
+target_sources(Motor_Control INTERFACE
+    Motor_Control.cpp)
 
 # Add any user requested libraries
 target_link_libraries(fw
+        Motor_Control
         hardware_spi
         hardware_i2c
         hardware_dma
@@ -57,6 +61,7 @@ target_link_libraries(fw
         hardware_timer
         hardware_watchdog
         hardware_clocks
+        pico_multicore
         pico_cyw43_arch_lwip_threadsafe_background
         )
 
