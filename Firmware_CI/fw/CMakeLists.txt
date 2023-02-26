@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD 17)
 
 # Initialise pico_sdk from installed location
 # (note this can come from environment, CMake cache etc)
-set(PICO_SDK_PATH "C:/RP2040/pico-sdk")
+set(PICO_SDK_PATH "C:/pico/pico-sdk")
 
 set(PICO_BOARD pico_w CACHE STRING "Board type")
 
@@ -50,9 +50,14 @@ add_library(Motor_Control INTERFACE)
 target_sources(Motor_Control INTERFACE
     Motor_Control.cpp)
 
+add_library(PID INTERFACE)
+target_sources(PID INTERFACE
+    PID.cpp)
 # Add any user requested libraries
 target_link_libraries(fw
         Motor_Control
+        PID
+        hardware_pwm
         hardware_spi
         hardware_i2c
         hardware_dma
