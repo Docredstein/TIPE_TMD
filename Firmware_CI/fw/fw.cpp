@@ -12,6 +12,7 @@
 #include "pico/multicore.h"
 #include "lsm6ds3tr-c_reg.h"
 
+#include "PID.h"
 #include "Motor_Control.h"
 // SPI Defines
 // We are going to use SPI 0, and allocate it to the following GPIO pins
