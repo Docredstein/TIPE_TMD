@@ -1,12 +1,20 @@
 #ifndef PID_H 
 #define PID_H 
+
+#include <stdio.h>
 class PID
 {
 private:
     /* data */
+    float m_Kp,m_Ki,m_Kd,m_max_d,m_max_int;
+    float m_lastError; 
+    float m_integral;
 public:
-    PID(/* args */);
+    PID(float Kp,float Ki,float Kd, float max_derivative = 1000, float max_integral = 1000);
     ~PID();
+    int update_measure(int mesure);
+    int update_consigne(int consigne);
+    float get_command();
 };
 
 
