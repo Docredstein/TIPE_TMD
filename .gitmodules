@@ -1,0 +1,3 @@
+[submodule "Firmware_CI\\fw\\SD"]
+	path = Firmware_CI\\fw\\SD
+	url = https://github.com/carlk3/no-OS-FatFS-SD-SPI-RPi-Pico

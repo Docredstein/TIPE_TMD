@@ -19,7 +19,7 @@ int PID::update_consigne(float consigne) {
 float PID::update_measure(float measure) {
     auto current_micros = time_us_32();
     float dt = (current_micros - m_lastMicros)/1e6; 
-    float error = (measure-m_consigne);
+    float error = (m_consigne-measure);
     float derivative = MIN((error-m_lastError)/dt,m_max_d);
     m_integral = MIN(m_integral + error*dt,m_max_int);
     m_lastError = error;
