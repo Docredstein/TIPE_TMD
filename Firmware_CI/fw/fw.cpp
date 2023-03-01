@@ -24,7 +24,11 @@
 // This example will use I2C0 on GPIO8 (SDA) and GPIO9 (SCL) running at 400KHz.
 // Pins can be changed, see the GPIO function select table in the datasheet for information on GPIO assignments
 
-
+typedef struct 
+{
+    i2c_inst_t *  handle;
+    int adress;
+}acc_handle;
 
 int64_t alarm_callback(alarm_id_t id, void *user_data) {
     // Put your timeout handler code in here
@@ -32,17 +36,15 @@ int64_t alarm_callback(alarm_id_t id, void *user_data) {
    
 }
 
-static int32_t platform_write(void *handle, uint8_t Reg, const uint8_t *Bufp, uint16_t len) {
+static int32_t platform_write(acc_handle *handle, uint8_t Reg, const uint8_t *Bufp, uint16_t len) {
+    //Il faut créer un buffer en plus qui pourra stocker l'adresse du registre de destination
+    
 return 0;
 }
 static int32_t platform_read(void *handle, uint8_t Reg, uint8_t *Bufp, uint16_t len) {
 return 0;
 }
-typedef struct 
-{
-    i2c_inst_t *  handle;
-    int adress;
-}acc_handle;
+
 stmdev_ctx_t acc1; 
 stmdev_ctx_t acc2;
 static void platform_init(void);
