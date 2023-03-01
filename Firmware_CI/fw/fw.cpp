@@ -38,21 +38,33 @@ return 0;
 static int32_t platform_read(void *handle, uint8_t Reg, uint8_t *Bufp, uint16_t len) {
 return 0;
 }
-stmdev_ctx_t dev_ctx; 
+typedef struct 
+{
+    i2c_inst_t *  handle;
+    int adress;
+}acc_handle;
+stmdev_ctx_t acc1; 
+stmdev_ctx_t acc2;
 static void platform_init(void);
 
 //Core 0 : sensor read/serial com/wifi?
 //Core 1 : Motor control
+acc_handle handle_bas{i2c0,0x6A};
+acc_handle handle_haut{i2c0,0x6B};
+
 
 
 
 int main()
 {
     stdio_init_all();
-    dev_ctx.write_reg = &platform_write;
-    dev_ctx.read_reg = &platform_read;
-    dev_ctx.handle= i2c0 ;
+    acc1.write_reg = &platform_write;
+    acc1.read_reg = &platform_read;
+    acc1.handle= &handle_bas ;
 
+    acc2.write_reg = &platform_write;
+    acc2.read_reg = &platform_read;
+    acc2.handle= &handle_haut;
 
     // SPI initialisation. This example will use SPI at 1MHz.
 
