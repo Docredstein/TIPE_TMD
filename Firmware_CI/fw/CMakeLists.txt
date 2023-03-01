@@ -46,10 +46,16 @@ target_include_directories(fw PUBLIC
   ${CMAKE_CURRENT_LIST_DIR}
   ${CMAKE_CURRENT_LIST_DIR}/.. # for our common lwipopts or any other standard includes, if required
 )
+add_subdirectory(SD/FatFs_SPI build)
+
 add_library(Motor_Control INTERFACE)
 target_sources(Motor_Control INTERFACE
     Motor_Control.cpp)
 
+add_library(logging INTERFACE)
+target_sources(logging INTERFACE
+        logging.cpp)
+    
 add_library(PID INTERFACE)
 target_sources(PID INTERFACE
     PID.cpp)
@@ -57,6 +63,8 @@ target_sources(PID INTERFACE
 target_link_libraries(fw
         Motor_Control
         PID
+        logging
+        FatFs_SPI
         hardware_pwm
         hardware_spi
         hardware_i2c
