@@ -59,6 +59,15 @@ acc_handle handle_haut{i2c0,0x6B};
 
 int main()
 {
+    gpio_init(10);
+    gpio_set_dir(10,1);
+    while(1) {
+        gpio_put(10,1);
+        sleep_ms(500);
+        gpio_put(10,0);
+        sleep_ms(500);
+
+    }/*
     stdio_init_all();
     acc1.write_reg = &platform_write;
     acc1.read_reg = &platform_read;
@@ -67,7 +76,7 @@ int main()
     acc2.write_reg = &platform_write;
     acc2.read_reg = &platform_read;
     acc2.handle= &handle_haut;
-
+*/
     // SPI initialisation. This example will use SPI at 1MHz.
 
     
