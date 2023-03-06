@@ -59,12 +59,15 @@ target_sources(logging INTERFACE
 add_library(PID INTERFACE)
 target_sources(PID INTERFACE
     PID.cpp)
+add_library(LSM6DS3TR INTERFACE)
+target_sources(LSM6DS3TR INTERFACE lsm6ds3tr-c_reg.c)
 # Add any user requested libraries
 target_link_libraries(fw
         Motor_Control
         PID
         logging
         FatFs_SPI
+        LSM6DS3TR
         hardware_pwm
         hardware_spi
         hardware_i2c
@@ -77,6 +80,7 @@ target_link_libraries(fw
         pico_multicore
         pico_cyw43_arch_lwip_threadsafe_background
         )
-
+pico_enable_stdio_usb(fw 1)
+pico_enable_stdio_uart(fw 0)
 pico_add_extra_outputs(fw)
 

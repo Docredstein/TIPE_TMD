@@ -64,7 +64,7 @@ CMakeFiles\fw.dir\Motor_Control.cpp.obj: \
  C:\pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/uart.h \
  C:\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/uart.h \
  C:\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/dreq.h \
- C:\pico\pico-sdk\src\rp2_common\pico_stdio_uart\include/pico/stdio_uart.h \
+ C:\pico\pico-sdk\src\rp2_common\pico_stdio_usb\include/pico/stdio_usb.h \
  C:\pico\pico-sdk\src\rp2_common\hardware_pwm\include/hardware/pwm.h \
  C:\pico\pico-sdk\src\rp2040\hardware_structs\include/hardware/structs/pwm.h \
  C:\pico\pico-sdk\src\rp2040\hardware_regs\include/hardware/regs/pwm.h \
