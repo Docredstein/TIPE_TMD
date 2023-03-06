@@ -36,38 +36,42 @@ int64_t alarm_callback(alarm_id_t id, void *user_data) {
    
 }
 
-static int32_t platform_write(acc_handle *handle, uint8_t Reg, const uint8_t *Bufp, uint16_t len) {
+static int32_t platform_write(void *handle, uint8_t Reg, const uint8_t *Bufp, uint16_t len) {
     //Il faut créer un buffer en plus qui pourra stocker l'adresse du registre de destination
-    
-return 0;
+    uint8_t newBuf[len+1];
+    newBuf[0] = Reg;
+    for (char i=0;i<len;i++) {
+        newBuf[i+1] = Bufp[i];
+    }
+    return i2c_write_blocking(((acc_handle*)handle)->handle,((acc_handle*)handle)->adress,newBuf,len+1,false);
 }
 static int32_t platform_read(void *handle, uint8_t Reg, uint8_t *Bufp, uint16_t len) {
+    
+i2c_write_blocking(((acc_handle*)handle)->handle,((acc_handle*)handle)->adress,&Reg,len+1,true);
+int ret = i2c_read_blocking(((acc_handle*)handle)->handle,((acc_handle*)handle)->adress,Bufp,len,false);
+if (ret <  len) {
+    return PICO_ERROR_GENERIC;
+}
 return 0;
 }
 
 stmdev_ctx_t acc1; 
 stmdev_ctx_t acc2;
-static void platform_init(void);
+
 
 //Core 0 : sensor read/serial com/wifi?
 //Core 1 : Motor control
 acc_handle handle_bas{i2c0,0x6A};
 acc_handle handle_haut{i2c0,0x6B};
+static void platform_init(void) {
 
+}
 
 
 
 int main()
 {
-    gpio_init(10);
-    gpio_set_dir(10,1);
-    while(1) {
-        gpio_put(10,1);
-        sleep_ms(500);
-        gpio_put(10,0);
-        sleep_ms(500);
 
-    }/*
     stdio_init_all();
     acc1.write_reg = &platform_write;
     acc1.read_reg = &platform_read;
@@ -76,7 +80,7 @@ int main()
     acc2.write_reg = &platform_write;
     acc2.read_reg = &platform_read;
     acc2.handle= &handle_haut;
-*/
+
     // SPI initialisation. This example will use SPI at 1MHz.
 
     
@@ -116,9 +120,13 @@ int main()
 void core1_entry() {
     PID pid = PID(1,0,0);
     
-
-
+    gpio_init(10);
+    gpio_set_dir(10,1);
     while(1) {
-        
+        gpio_put(10,1);
+        sleep_ms(500);
+        gpio_put(10,0);
+        sleep_ms(500);
+
     }
 }
