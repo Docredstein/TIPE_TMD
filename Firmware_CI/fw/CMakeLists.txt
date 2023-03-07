@@ -81,6 +81,6 @@ target_link_libraries(fw
         pico_cyw43_arch_lwip_threadsafe_background
         )
 pico_enable_stdio_usb(fw 1)
-pico_enable_stdio_uart(fw 0)
+pico_enable_stdio_uart(fw 1)
 pico_add_extra_outputs(fw)
 
