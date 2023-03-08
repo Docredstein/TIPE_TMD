@@ -1,9 +1,10 @@
 #ifndef LOGGING_H 
 #define LOGGING_H 
 #include <stdio.h>
-#include "string.h"
+//#include "string.h"
 #include "SD/FatFs_SPI/ff15/source/ff.h"
 #include "stdint.h"
+#include <string.h>
 class logging
 {
 private:
@@ -14,9 +15,9 @@ private:
 public:
     logging(/* args */);
     ~logging();
-    int open_file(char* filename);
+    int open_file(char filename[]);
     int close_file();
-    int save(char * data);
+    int save(char data[]);
 };
 
 

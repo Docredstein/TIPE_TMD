@@ -29,7 +29,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(fw fw.cpp )
+add_executable(fw fw.cpp hw_config.cpp)
 
 pico_set_program_name(fw "fw")
 pico_set_program_version(fw "0.1")

@@ -15,6 +15,7 @@
 #include "logging.h"
 #include "PID.h"
 #include "Motor_Control.h"
+
 // SPI Defines
 // We are going to use SPI 0, and allocate it to the following GPIO pins
 // Pins can be changed, see the GPIO function select table in the datasheet for information on GPIO assignments
@@ -97,6 +98,7 @@ int main()
     static int16_t raw_accel_1[3], raw_accel_2[3], raw_gyro_1[3], raw_gyro_2[3], raw_temp_1, raw_temp_2;
     static float acceleration_mg_1[3], acceleration_mg_2[3], angular_mdps_1[3], angular_mdps_2[3], temp_1, temp_2;
     uint8_t drdy = 0;
+    int save_count = 0;
 
     lsm6ds3tr_c_reg_t reg_1, reg_2; // registre des drapeaux
 
@@ -105,7 +107,7 @@ int main()
     gpio_set_function(0, GPIO_FUNC_UART);
     gpio_set_function(1, GPIO_FUNC_UART);
     uart_init(uart0, 115200);
-    //sleep_ms(5000);
+    sleep_ms(5000);
     printf("start\n");
     acc1.write_reg = &platform_write;
     acc1.read_reg = &platform_read;
@@ -114,6 +116,20 @@ int main()
     acc2.write_reg = &platform_write;
     acc2.read_reg = &platform_read;
     acc2.handle = &handle_haut;
+    gpio_init(17);
+    gpio_put(17,0);
+    printf("log");
+    logging log;
+    char filename[50];
+    char data[100] {"FRAMBOURT Mateis PSI*, BOCQUILLON NOE PSI*, 2023"};
+    sprintf(filename,"copyright.txt");
+    
+    printf("opening the file : return %i\n",log.open_file(filename));
+        printf("saving the file : return %i\n",log.save(data));
+        printf("clsing the file : return %i\n",log.close_file());
+    sprintf(filename,"reading.csv");
+    printf("opening the file : return %i\n",log.open_file(filename));
+    log.save("----------------\n");
     uint8_t whoami = 0;
     auto ret = lsm6ds3tr_c_device_id_get(&acc1, &whoami);
     if (ret != 0)
@@ -151,8 +167,8 @@ int main()
     lsm6ds3tr_c_gy_power_mode_set(&acc1, LSM6DS3TR_C_GY_HIGH_PERFORMANCE);
 
     lsm6ds3tr_c_block_data_update_set(&acc2, PROPERTY_ENABLE);
-    lsm6ds3tr_c_xl_data_rate_set(&acc2, LSM6DS3TR_C_XL_ODR_104Hz);
-    lsm6ds3tr_c_gy_data_rate_set(&acc2, LSM6DS3TR_C_GY_ODR_12Hz5);
+    lsm6ds3tr_c_xl_data_rate_set(&acc2, LSM6DS3TR_C_XL_ODR_6k66Hz);
+    lsm6ds3tr_c_gy_data_rate_set(&acc2, LSM6DS3TR_C_GY_ODR_6k66Hz);
 
     lsm6ds3tr_c_xl_full_scale_set(&acc2, LSM6DS3TR_C_4g);
     lsm6ds3tr_c_gy_full_scale_set(&acc2, LSM6DS3TR_C_2000dps);
@@ -247,20 +263,33 @@ int main()
             lsm6ds3tr_c_temperature_raw_get(&acc2, &raw_temp_2);
             temp_2 = lsm6ds3tr_c_from_lsb_to_celsius(raw_temp_2);
         }
-
+     
         if (newData_flag)
         {
+            char tx_buf[100];
+            memset(tx_buf,0,100);
+            
             auto current_time = time_us_64();
-            printf("%lld;", current_time);
+            sprintf(tx_buf,"%lld;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;\n",current_time,acceleration_mg_2[0], acceleration_mg_2[1], acceleration_mg_2[2],angular_mdps_2[0], angular_mdps_2[1], angular_mdps_2[2],temp_2);
+            //printf("%lld;", current_time);
             /*
             printf("%f;%f;%f;", acceleration_mg_1[0], acceleration_mg_1[1], acceleration_mg_1[2]);
             printf("%f;%f;%f;", angular_mdps_1[0], angular_mdps_1[1], angular_mdps_1[2]);
             printf("%f;", temp_1);*/
 
-            printf("%.2f;%.2f;%.2f;", acceleration_mg_2[0], acceleration_mg_2[1], acceleration_mg_2[2]);
+            /*printf("%.2f;%.2f;%.2f;", acceleration_mg_2[0], acceleration_mg_2[1], acceleration_mg_2[2]);
             printf("%.2f;%.2f;%.2f;", angular_mdps_2[0], angular_mdps_2[1], angular_mdps_2[2]);
             printf("%.2f;", temp_2);
-            printf("\n");
+            printf("\n");*/
+            printf(tx_buf);
+            log.save(tx_buf);
+            save_count++;
+            
+        }
+        if (save_count >= 1000) {
+            log.close_file();
+            log.open_file(filename);
+            save_count =0;
         }
     }
     return 0;
