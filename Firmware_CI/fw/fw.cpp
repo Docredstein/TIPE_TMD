@@ -67,8 +67,8 @@ stmdev_ctx_t acc2;
 
 // Core 0 : sensor read/serial com/wifi?
 // Core 1 : Motor control
-acc_handle handle_bas{i2c0, 0x6A};
-acc_handle handle_haut{i2c0, 0x6B};
+acc_handle handle_bas{i2c0, 0x6B};
+acc_handle handle_haut{i2c0, 0x6A};
 static void platform_init(void)
 {
     i2c_init(handle_bas.handle, 100000);
@@ -86,6 +86,7 @@ void core1_entry()
     gpio_set_dir(10, 1);
     while (1)
     {
+        if(uart_)
         gpio_put(10, 1);
         sleep_ms(500);
         gpio_put(10, 0);
@@ -117,18 +118,18 @@ int main()
     acc2.read_reg = &platform_read;
     acc2.handle = &handle_haut;
     gpio_init(17);
-    gpio_put(17,0);
+    gpio_put(17, 0);
     printf("log");
     logging log;
     char filename[50];
-    char data[100] {"FRAMBOURT Mateis PSI*, BOCQUILLON NOE PSI*, 2023"};
-    sprintf(filename,"copyright.txt");
-    
-    printf("opening the file : return %i\n",log.open_file(filename));
-        printf("saving the file : return %i\n",log.save(data));
-        printf("clsing the file : return %i\n",log.close_file());
-    sprintf(filename,"reading.csv");
-    printf("opening the file : return %i\n",log.open_file(filename));
+    char data[100]{"FRAMBOURT Mateis PSI*, BOCQUILLON NOE PSI*, 2023"};
+    sprintf(filename, "copyright.txt");
+
+    printf("opening the file : return %i\n", log.open_file(filename));
+    printf("saving the file : return %i\n", log.save(data));
+    printf("clsing the file : return %i\n", log.close_file());
+    sprintf(filename, "reading_09032023.csv");
+    printf("opening the file : return %i\n", log.open_file(filename));
     log.save("----------------\n");
     uint8_t whoami = 0;
     auto ret = lsm6ds3tr_c_device_id_get(&acc1, &whoami);
@@ -200,7 +201,6 @@ int main()
 
     printf("initialised\n");
     puts("Hello, world!\n");
-    
 
     while (1)
     {
@@ -230,7 +230,7 @@ int main()
         }
         if (reg_1.status_reg.tda)
         {
-            //newData_flag = true;
+            // newData_flag = true;
             raw_temp_1 = 0;
             lsm6ds3tr_c_temperature_raw_get(&acc1, &raw_temp_1);
             temp_1 = lsm6ds3tr_c_from_lsb_to_celsius(raw_temp_1);
@@ -258,20 +258,20 @@ int main()
         }
         if (reg_2.status_reg.tda)
         {
-            //newData_flag = true;
+            // newData_flag = true;
             raw_temp_2 = 0;
             lsm6ds3tr_c_temperature_raw_get(&acc2, &raw_temp_2);
             temp_2 = lsm6ds3tr_c_from_lsb_to_celsius(raw_temp_2);
         }
-     
+
         if (newData_flag)
         {
-            char tx_buf[100];
-            memset(tx_buf,0,100);
-            
+            char tx_buf[500];
+            memset(tx_buf, 0, 500);
+
             auto current_time = time_us_64();
-            sprintf(tx_buf,"%lld;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;\n",current_time,acceleration_mg_2[0], acceleration_mg_2[1], acceleration_mg_2[2],angular_mdps_2[0], angular_mdps_2[1], angular_mdps_2[2],temp_2);
-            //printf("%lld;", current_time);
+            sprintf(tx_buf, "%lld;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;\n", current_time, acceleration_mg_1[0], acceleration_mg_1[1], acceleration_mg_1[2], angular_mdps_1[0], angular_mdps_1[1], angular_mdps_1[2], temp_1, acceleration_mg_2[0], acceleration_mg_2[1], acceleration_mg_2[2], angular_mdps_2[0], angular_mdps_2[1], angular_mdps_2[2], temp_2);
+            // printf("%lld;", current_time);
             /*
             printf("%f;%f;%f;", acceleration_mg_1[0], acceleration_mg_1[1], acceleration_mg_1[2]);
             printf("%f;%f;%f;", angular_mdps_1[0], angular_mdps_1[1], angular_mdps_1[2]);
@@ -284,12 +284,12 @@ int main()
             printf(tx_buf);
             log.save(tx_buf);
             save_count++;
-            
         }
-        if (save_count >= 1000) {
+        if (save_count >= 1000)
+        {
             log.close_file();
             log.open_file(filename);
-            save_count =0;
+            save_count = 0;
         }
     }
     return 0;
