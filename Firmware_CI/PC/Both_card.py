@@ -45,22 +45,23 @@ def recup_port_Printer():
     # return None
     # print(mData.is_open)
     # print(mData.name)
-    time.sleep(0.5)
+    time.sleep(1)
     print(mData.read_all().decode())
     mData.write(b"G91\n")
     #mData.write(b"G0 X10000 F5000")
     mData.write(b"M121\n")
-    mData.write(b"M502 X32000\n")
+    mData.write(b"M92 X640\n")
     #mData.write(b"G0 X1000 F2000")
     # time.sleep(1)
     # print(mData.read_all().decode())
-
+    time.sleep(1)
+    print(mData.read_all().decode())
     return mData
 
-"""
+
 Marlin = recup_port_Printer()
-Board = recup_port_Arduino()
-"""
+#Board = recup_port_Arduino()
+
 freq = 0
 filename = "default.csv"
 Recording = False
@@ -69,7 +70,12 @@ fig = plt.figure()
 
 ax = [fig.add_subplot() for i in range(14)]
 def osciller():
-    Board.write(f"G0 X15000 F{60*freq}")
+    freq = freq_slider.get()
+    print(f'moving at {freq} Hz')
+    Marlin.write((f"G0 X1000 F{600*freq}\n").encode())
+    print("ok")
+    time.sleep(0.5)
+    print(Marlin.read_all())
 def save() :
     filename = tkinter.filedialog.asksaveasfilename(title="enregistrer les mesures",filetypes=[("csv","*.csv")],defaultextension=[("csv","*.csv")])
     if filename is None : 
@@ -130,15 +136,17 @@ def animate(i,mesure) :
     for i in range(len(mesure[0]-1)) :
         ax[i].clear()
         ax[i].plot(x,y[i])
+def set_freq(val) :
+    freq = val
 
-    
-anim = animation.FuncAnimation(fig,animate,fargs=mesure,frames=100)
+#anim = animation.FuncAnimation(fig,animate,fargs=mesure,frames=100)
 
 base = tkinter.Tk()
+"""
 canvas = FigureCanvasTkAgg(fig, master=base)
 canvas.draw()
 toolbar = NavigationToolbar2Tk(fig,master=base)
-toolbar.update()
+toolbar.update()"""
 base.title("Mesures TIPE 2023")
 
 base.protocol("WM_DELETE_WINDOW",close)
@@ -150,7 +158,7 @@ button_freq = tkinter.Button(base, text="Lancer le Mouvement", command=osciller,
                                 fg=fg, highlightbackground=accent_bg, highlightcolor=accent_fg, bd=bd, relief=relief)
 button_freq.pack()
 
-freq_slider = tkinter.Scale(base, orient="horizontal", variable=freq, tickinterval=0.5, width=15, resolution=0.1, length=500,
+freq_slider = tkinter.Scale(base, orient="horizontal", command=set_freq, tickinterval=0.5, width=15, resolution=0.1, length=500,
                             from_=0, to=10, label="Fréquence", bg=bg, fg=fg, highlightbackground=accent_bg, highlightcolor=accent_fg, bd=bd, relief=relief)
 freq_slider.pack()
 

@@ -16,6 +16,9 @@
 #include "PID.h"
 #include "Motor_Control.h"
 
+
+
+#define HEARTBEATLED 10
 // SPI Defines
 // We are going to use SPI 0, and allocate it to the following GPIO pins
 // Pins can be changed, see the GPIO function select table in the datasheet for information on GPIO assignments
@@ -82,14 +85,14 @@ static void platform_init(void)
 void core1_entry()
 {
 
-    gpio_init(10);
-    gpio_set_dir(10, 1);
+    gpio_init(HEARTBEATLED);
+    gpio_set_dir(HEARTBEATLED, 1);
     while (1)
     {
-        if(uart_)
-        gpio_put(10, 1);
+        
+        gpio_put(HEARTBEATLED, 1);
         sleep_ms(500);
-        gpio_put(10, 0);
+        gpio_put(HEARTBEATLED, 0);
         sleep_ms(300);
     }
 }
@@ -100,7 +103,7 @@ int main()
     static float acceleration_mg_1[3], acceleration_mg_2[3], angular_mdps_1[3], angular_mdps_2[3], temp_1, temp_2;
     uint8_t drdy = 0;
     int save_count = 0;
-
+    bool Measuring = false;
     lsm6ds3tr_c_reg_t reg_1, reg_2; // registre des drapeaux
 
     stdio_init_all();
@@ -128,7 +131,9 @@ int main()
     printf("opening the file : return %i\n", log.open_file(filename));
     printf("saving the file : return %i\n", log.save(data));
     printf("clsing the file : return %i\n", log.close_file());
-    sprintf(filename, "reading_09032023.csv");
+    sprintf(filename, "reading_");
+    sprintf(filename+8,__DATE__);
+    
     printf("opening the file : return %i\n", log.open_file(filename));
     log.save("----------------\n");
     uint8_t whoami = 0;
@@ -204,7 +209,8 @@ int main()
 
     while (1)
     {
-        bool newData_flag = false;
+        if (Measuring)
+        {bool newData_flag = false;
         lsm6ds3tr_c_status_reg_get(&acc1, &reg_1.status_reg);
         lsm6ds3tr_c_status_reg_get(&acc2, &reg_2.status_reg);
         if (reg_1.status_reg.xlda)
@@ -291,6 +297,6 @@ int main()
             log.open_file(filename);
             save_count = 0;
         }
-    }
+    }}
     return 0;
 }
