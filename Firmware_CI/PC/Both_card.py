@@ -13,15 +13,22 @@ import tkinter.simpledialog
 import tkinter.filedialog
 import threading
 plt.rcParams["figure.autolayout"] = True
-
+"""
 bg = "#230A63"
 active_bg = "#448747"
 bd = 1
 fg = "#BAB038"
 accent_fg = "#A44ABA"
-accent_bg = "#BA024E"
-relief = "raised"
+accent_bg = "#BA024E" """
 
+COLORS = {
+    "bg": "#1B1B1B",   # background color
+    "fg": "#F2F2F2",   # foreground color
+    "accent": "#5DA5DA",  # accent color
+    "highlight": "#2A2A2A", # highlight color
+    "text": "#CCCCCC",  # text color
+}
+X = 0
 
 def recup_port_Arduino():
     ports = list(serial.tools.list_ports.comports())
@@ -59,20 +66,23 @@ def recup_port_Printer():
     return mData
 
 
-Marlin = recup_port_Printer()
+#Marlin = recup_port_Printer()
 #Board = recup_port_Arduino()
 
 freq = 0
 filename = "default.csv"
 Recording = False
-mesure = [[0]*15,[1]*15]
+mesure = []
 fig = plt.figure()
 
 ax = [fig.add_subplot() for i in range(14)]
 def osciller():
+    global X,freq
     freq = freq_slider.get()
     print(f'moving at {freq} Hz')
-    Marlin.write((f"G0 X1000 F{600*freq}\n").encode())
+    Marlin.write((f"G0 X{X+1000} F{int(600*freq)}\n").encode())
+    X+=1000
+    print(f"{X=}")
     print("ok")
     time.sleep(0.5)
     print(Marlin.read_all())
@@ -92,14 +102,18 @@ def read_Value() :
     while Recording == True : 
         #print("a")
         
-        time.sleep(1)
-        """if Board.in_waiting()>15 : 
-            newmes = Board.readline() 
-            newmes = newmes.split(";") 
-            newmes[0] = int(newmes)
-            for i in range(1,len(newmes)) :
-                newmes[i] = float(newmes[i])
-            mesure.append(newmes)"""
+        #time.sleep(0.1)
+        if Board.in_waiting>15 : 
+            raw = Board.readline() 
+            raw = raw.decode()
+            if raw[0] == "?" :
+                raw = raw.rstrip().replace("\n","").split(";") 
+                #print(raw)
+                newmes = [0]*13
+                newmes[0] = int(raw[0][1:])
+                for i in range(1,13) :
+                    newmes[i] = float(raw[i])
+                mesure.append(newmes)
 rec_btn_str = "Appuyez pour commencer l'enregistrement"
 Record_thread = None
 
@@ -115,6 +129,7 @@ def record() :
         
         
     else :
+        print(mesure)
         Recording = False 
         Record_thread.join()
         Record_thread = None
@@ -151,23 +166,41 @@ base.title("Mesures TIPE 2023")
 
 base.protocol("WM_DELETE_WINDOW",close)
 base.geometry("1280x720")
-base.configure(bg="#05022E", highlightbackground=accent_bg,
-                highlightcolor=accent_fg, bd=bd, relief=relief)
+base.configure(bg=COLORS["bg"])
 
-button_freq = tkinter.Button(base, text="Lancer le Mouvement", command=osciller, bg=bg,
-                                fg=fg, highlightbackground=accent_bg, highlightcolor=accent_fg, bd=bd, relief=relief)
-button_freq.pack()
+top_frame = tkinter.Frame(base, bg=COLORS["bg"])
+top_frame.pack(side="top", fill="x")
 
-freq_slider = tkinter.Scale(base, orient="horizontal", command=set_freq, tickinterval=0.5, width=15, resolution=0.1, length=500,
-                            from_=0, to=10, label="Fréquence", bg=bg, fg=fg, highlightbackground=accent_bg, highlightcolor=accent_fg, bd=bd, relief=relief)
+label = tkinter.Label(top_frame, text="Fréquence (Hz)", fg=COLORS["fg"], bg=COLORS["bg"], font=("Helvetica", 18))
+label.pack(side="top")
+
+
+freq_slider = tkinter.Scale(top_frame, orient="horizontal", command=set_freq, tickinterval=0.5, width=15, resolution=0.1, length=4000,
+                            from_=0, to=10, fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
 freq_slider.pack()
+freq_slider.pack(side="left",padx=20,pady=10)
+status_label = tkinter.Label(top_frame,text="Status :",fg=COLORS["fg"], bg=COLORS["bg"], font=("Helvetica", 18))
+status_label.pack()
 
-button_file = tkinter.Button(base,text="Enregistrer",command=save,bg=bg, fg=fg, highlightbackground=accent_bg, highlightcolor=accent_fg, bd=bd, relief=relief)
-button_file.pack()
 
-button_rec = tkinter.Button(base,text=rec_btn_str,command=record,bg=bg, fg=fg, highlightbackground=accent_bg, highlightcolor=accent_fg, bd=bd, relief=relief)
-button_rec.pack()
 
+
+
+
+bottom_frame = tkinter.Frame(base, bg=COLORS["bg"])
+bottom_frame.pack(side="bottom", fill="x")
+
+button_freq = tkinter.Button(bottom_frame, text="Lancer le Mouvement", command=osciller, fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
+button_freq.pack(side="left", padx=20, pady=20)
+
+
+
+
+button_rec = tkinter.Button(bottom_frame,text=rec_btn_str,command=record,fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
+button_rec.pack(side="left", padx=20, pady=20)
+
+button_file = tkinter.Button(bottom_frame,text="Enregistrer le fichier",command=save,fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
+button_file.pack(side="left", padx=20, pady=20)
 base.state("zoomed")
 tkinter.mainloop()
 #record()
