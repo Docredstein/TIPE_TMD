@@ -17,6 +17,8 @@
 #include "Motor_Control.h"
 #include <strings.h>
 
+#define NOGYRTEMP
+
 #define HEARTBEATLED 10
 // SPI Defines
 // We are going to use SPI 0, and allocate it to the following GPIO pins
@@ -88,7 +90,7 @@ void core1_entry()
     gpio_set_dir(HEARTBEATLED, 1);
     while (1)
     {
-
+        
         gpio_put(HEARTBEATLED, 1);
         sleep_ms(500);
         gpio_put(HEARTBEATLED, 0);
@@ -163,6 +165,7 @@ bool CheckSensor(stmdev_ctx_t *acc, lsm6ds3tr_c_reg_t *reg, int16_t *raw_accel, 
         acceleration_mg[2] = lsm6ds3tr_c_from_fs4g_to_mg(
             raw_accel[2]);
     }
+    #ifndef NOGYRTEMP
     if (reg->status_reg.gda)
     {
         newData_flag = true;
@@ -179,6 +182,7 @@ bool CheckSensor(stmdev_ctx_t *acc, lsm6ds3tr_c_reg_t *reg, int16_t *raw_accel, 
         lsm6ds3tr_c_temperature_raw_get(acc, raw_temp);
         *temp = lsm6ds3tr_c_from_lsb_to_celsius(*raw_temp);
     }
+    #endif
     return newData_flag;
 }
 
@@ -260,12 +264,15 @@ int main()
 
             if (newData_flag)
             {
-                char tx_buf[500];
+                char tx_buf[1000];
                 memset(tx_buf, 0, 500);
 
                 auto current_time = time_us_64();
-                sprintf(tx_buf, "?%lld;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;%.2f;\n", current_time, acceleration_mg_1[0], acceleration_mg_1[1], acceleration_mg_1[2], angular_mdps_1[0], angular_mdps_1[1], angular_mdps_1[2], temp_1, acceleration_mg_2[0], acceleration_mg_2[1], acceleration_mg_2[2], angular_mdps_2[0], angular_mdps_2[1], angular_mdps_2[2], temp_2);
-
+                #ifndef NOGYRTEMP
+                sprintf(tx_buf, "?%lld;%f;%f;%f;%f;%f;%f;%f;%f;%f;%f;%f;%f;%f;%f;\n", current_time, acceleration_mg_1[0], acceleration_mg_1[1], acceleration_mg_1[2], angular_mdps_1[0], angular_mdps_1[1], angular_mdps_1[2], temp_1, acceleration_mg_2[0], acceleration_mg_2[1], acceleration_mg_2[2], angular_mdps_2[0], angular_mdps_2[1], angular_mdps_2[2], temp_2);
+                #else 
+                sprintf(tx_buf,"?%lld;%.4f;%.4f;%.4f;%.4f;%.4f;%.4f;\n",current_time,acceleration_mg_1[0], acceleration_mg_1[1], acceleration_mg_1[2],acceleration_mg_2[0], acceleration_mg_2[1], acceleration_mg_2[2]);
+                #endif
                 printf(tx_buf);
                 log.save(tx_buf);
                 save_count++;
