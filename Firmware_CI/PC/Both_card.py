@@ -1,4 +1,6 @@
 # importation des modules
+
+#22 mm de large pendule et 55mm barre 7.5mm de dia 15 ext
 import serial.tools.list_ports  # pour la communication avec le port série
 import serial
 import matplotlib.pyplot as plt  # pour le tracé de graphe
@@ -67,8 +69,8 @@ def recup_port_Printer():
     return mData
 
 
-Marlin = recup_port_Printer()
-Board = recup_port_Arduino()
+#Marlin = recup_port_Printer()
+#Board = recup_port_Arduino()
 
 freq = 0
 filename = "default.csv"
@@ -83,6 +85,8 @@ def osciller():
     global X, freq
     freq = freq_slider.get()
     print(f'moving at {freq} Hz')
+    Marlin.write(b"G91\n")
+    #time.sleep(1)
     Marlin.write((f"G0 X{10*freq*30} F{int(600*freq)}\n").encode())
     X += 1000
     print(f"{X=}")
@@ -97,7 +101,7 @@ def save():
     global mesure
     if filename is None:
         return
-    print(mesure)
+    #print(mesure)
     with open(filename, "w+") as file:
         for ligne in mesure:
             for valeur in ligne:
