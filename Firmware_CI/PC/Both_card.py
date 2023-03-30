@@ -69,8 +69,8 @@ def recup_port_Printer():
     return mData
 
 
-#Marlin = recup_port_Printer()
-#Board = recup_port_Arduino()
+Marlin = recup_port_Printer()
+Board = recup_port_Arduino()
 
 freq = 0
 filename = "default.csv"
@@ -89,7 +89,7 @@ def osciller():
     #time.sleep(1)
     Marlin.write((f"G0 X{10*freq*30} F{int(600*freq)}\n").encode())
     X += 1000
-    print(f"{X=}")
+    print(f"X={X}")
     print("ok")
     time.sleep(0.5)
     print(Marlin.read_all())
@@ -132,7 +132,8 @@ def read_Value():
                 mesure.append(newmes)
 
 
-rec_btn_str = "Appuyez pour commencer l'enregistrement"
+#rec_btn_str = "Appuyez pour commencer l'enregistrement"
+rec_btn_str=tkinter.StringVar()
 Record_thread = None
 
 
@@ -143,7 +144,7 @@ def record():
         Recording = True
         #Board.write(b"S")
         Record_thread = threading.Thread(target=read_Value, daemon=True)
-        rec_btn_str = "Appuyez pour arreter l'enregistrement"
+        rec_btn_str.set("Appuyez pour arreter l'enregistrement")
         # Record_thread.run()
         Record_thread.start()
 
@@ -153,7 +154,9 @@ def record():
         #Board.write(b"T")
         Record_thread.join()
         Record_thread = None
-        rec_btn_str = "Appuyez pour commencer l'enregistrement"
+        Marlin.write(b"M18\n")
+        
+        rec_btn_str.set("Appuyez pour commencer l'enregistrement")
 
     print("Button finished")
 
