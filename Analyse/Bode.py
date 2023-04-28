@@ -2,18 +2,18 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import sys
 import os 
+from numpy.fft import fft 
 
 
 
-
-
-liste_fichier  = os.listdir("../Mesures/Bode à vide/")
+folder = "Cleaned/Bode a vide/"
+liste_fichier  = os.listdir(folder)
 #print(np.genfromtxt("../Mesures/Bode à vide/0.3Hz.csv",delimiter=";"))
 def clean() : 
     for name in liste_fichier :
         plt.figure()
         try :
-            frame = np.genfromtxt("../Mesures/Bode à vide/"+name,delimiter=";")
+            frame = np.genfromtxt(folder+name,delimiter=";")
         except Exception: 
             print(name, Exception)
         mat = [frame[:,0]]
@@ -45,23 +45,50 @@ def naiveString(l:list) :
     for i in l : 
         out += i 
     return out
+def end_freq(l:list,end_freq:float)->int :
+    for i in range(len(l)) :
+        if l[i]>=end_freq :
+            return i
+    raise Exception("fréquence non trouvée")
 def bode()  : 
     gain = []
+    phase = []
     freq = []
     plt.figure()
     for i,name in enumerate(liste_fichier) :
-        plt.subplot(4,4,i+1)
-        frame = np.genfromtxt("Cleaned/Bode a Vide/"+name.replace(".csv","_Cleaned.csv"),delimiter=";")
-        freq.append(float(naiveString([i for i in name[:-4] if i in "0123456789."])))
-        gain.append(20*np.log10((np.max(frame[:,6])-np.min(frame[:,6]))/(np.max(frame[:,1])-np.min(frame[:,1])))) 
-        plt.plot(frame[:,0],frame[:,1])
-        plt.plot(frame[:,0],frame[:,6])
-
-    return (freq,gain)
-f,g = bode()
-plt.figure()
-print(f)
-plt.semilogx(f,g,"rx") 
-plt.show()
+        frame = np.genfromtxt(folder+name,delimiter=";")
+        bas = frame[:,1] 
+        haut = frame[:,5]
+        bas = bas - np.mean(bas) 
+        haut = haut - np.mean(haut) 
+        fft_bas = fft(bas)
+        fft_haut = fft(haut)
+        n = np.arange(len(fft_bas))
         
+        frequence = (n/(frame[-1,0]-frame[0,0]))*1e6 #f = n/deltaT
+        f_ind = np.argmax(np.abs(fft_bas)[:end_freq(frequence,10)]) 
+        #print(frequence)
+        #print(f_ind)
+        freq.append(frequence[f_ind])
+        gain.append(20*np.log(np.abs(fft_haut[f_ind])/np.abs(fft_bas[f_ind]))) 
+        phase.append(np.angle(fft_haut[f_ind])-np.angle(fft_bas[f_ind]))
+        #print(name,freq[-1],gain[-1],phase[-1])
+    plt.subplot(2,1,1)
+    plt.semilogx(freq,gain,"x")
+    plt.grid(True,"both")
+    plt.ylabel("$G_{dB}$ (dB)")
+    plt.subplot(2,1,2) 
+    plt.semilogx(freq,phase,"x")
+    plt.ylabel("φ (rad)")
+    plt.xlabel("Fréquence d'excitation (Hz)")
+    plt.grid(True,"both")
+    plt.suptitle(folder.split("/")[-2])
+    plt.savefig("Image/"+folder.replace(" ","_").split("/")[-2]+".png")
+    out = np.concatenate((freq,gain,phase)).reshape((len(freq),3))
+    np.savetxt(folder.split("/")[-2]+".csv",out,delimiter=";")
+    plt.show()
+    return (freq, gain, phase)
+print(bode())
+    
+
 
