@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt 
 import sys
 import os 
+from tqdm import tqdm
 from numpy.fft import fft 
 
 
@@ -10,13 +11,13 @@ folder = "masse en haut faible amplitude/"
 liste_fichier  = os.listdir("ToClean/"+folder)
 #print(np.genfromtxt("../Mesures/Bode à vide/0.3Hz.csv",delimiter=";"))
 def clean() : 
-    for name in liste_fichier :
-        plt.figure()
+    for name in tqdm(liste_fichier) :
+        plt.figure(figsize=(10,5))
         frame = None
         try :
             frame = np.genfromtxt("ToClean/"+folder+name,delimiter=";",usecols=np.arange(0,7),invalid_raise=False)
         except Exception as err: 
-            print(name, err.__repr__())
+            #print(name, err.__repr__())
             print(f"\033[91mERROR : The folder could not be read\033[0m : ToClean/{folder+name}")
         #print(frame)
         mat = [frame[:,0]]
@@ -44,10 +45,10 @@ def clean() :
         plt.xlabel("t (s)")
         plt.ylabel("a (mg)")
         try :
-            plt.savefig("Image/"+folder+name.replace("csv","png"))
+            plt.savefig("Image/"+folder+name.replace("csv","pdf"))
         except FileNotFoundError:
             os.mkdir("Image/"+folder)
-            plt.savefig("Image/"+folder+name.replace("csv","png"))
+            plt.savefig("Image/"+folder+name.replace("csv","pdf"))
         try :
             np.savetxt("Cleaned/"+folder+name,mat,delimiter=";")
         except FileNotFoundError:
@@ -68,7 +69,7 @@ def bode()  :
     gain = []
     phase = []
     freq = []
-    plt.figure()
+    plt.figure(figsize=(10,5))
     for i,name in enumerate(liste_fichier) :
         frame = np.genfromtxt("Cleaned/"+folder+name,delimiter=";")
         #print(len(frame))
@@ -85,7 +86,7 @@ def bode()  :
         #print(frequence)
         f_ind = np.argmax(np.abs(fft_bas)[:end_freq(frequence,10)]) 
         
-        print(f_ind)
+        #print(f_ind)
         freq.append(frequence[f_ind])
         gain.append(20*np.log(np.abs(fft_haut[f_ind])/np.abs(fft_bas[f_ind]))) 
         phase.append(np.angle(fft_haut[f_ind])-np.angle(fft_bas[f_ind]))
@@ -100,13 +101,13 @@ def bode()  :
     plt.xlabel("Fréquence d'excitation (Hz)")
     plt.grid(True,"both")
     plt.suptitle(folder.split("/")[-2])
-    plt.savefig("Image/"+folder.replace(" ","_").split("/")[-2]+".png")
+    plt.savefig("Image/"+folder.replace(" ","_").split("/")[-2]+".pdf")
     out = np.concatenate((freq,gain,phase)).reshape((len(freq),3))
     np.savetxt(folder.split("/")[-2]+".csv",out,delimiter=";")
     #plt.show()
     return (freq, gain, phase)
-for folder in os.listdir("ToClean/") :
-    print(f"\033[92mTreating folder :\033[0m {folder}")
+for folder in tqdm(os.listdir("ToClean/")) :
+    print(f"\033[92m Treating folder :\033[0m {folder}")
     #folder = "masse en haut faible amplitude/"
     try : 
         folder = folder + "/"
@@ -116,8 +117,9 @@ for folder in os.listdir("ToClean/") :
     except :
         print("\033[91mERROR\033[0m")
         raise
-    print(bode())
-    print(f"\033[92m\033[47mfolder all done")
+    bode()
+    print(f"\033[92mfolder completely treated\033[0m")
+print(f"\033[92m\033[4mfolder all done")
     
 
 
