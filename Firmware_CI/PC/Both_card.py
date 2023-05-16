@@ -195,59 +195,59 @@ def reset_mar():
 
 #anim = animation.FuncAnimation(fig,animate,fargs=mesure,frames=100)
 
+while True :
+    base = tkinter.Tk()
+    """
+    canvas = FigureCanvasTkAgg(fig, master=base)
+    canvas.draw()
+    toolbar = NavigationToolbar2Tk(fig,master=base)
+    toolbar.update()"""
+    base.title("Mesures TIPE 2023")
 
-base = tkinter.Tk()
-"""
-canvas = FigureCanvasTkAgg(fig, master=base)
-canvas.draw()
-toolbar = NavigationToolbar2Tk(fig,master=base)
-toolbar.update()"""
-base.title("Mesures TIPE 2023")
+    base.protocol("WM_DELETE_WINDOW", close)
+    base.geometry("1280x720")
+    base.configure(bg=COLORS["bg"])
 
-base.protocol("WM_DELETE_WINDOW", close)
-base.geometry("1280x720")
-base.configure(bg=COLORS["bg"])
+    top_frame = tkinter.Frame(base, bg=COLORS["bg"])
+    top_frame.pack(side="top", fill="x")
 
-top_frame = tkinter.Frame(base, bg=COLORS["bg"])
-top_frame.pack(side="top", fill="x")
-
-label = tkinter.Label(top_frame, text="Fréquence (Hz)",
-                      fg=COLORS["fg"], bg=COLORS["bg"], font=("Helvetica", 18))
-label.pack(side="top")
-
-
-freq_slider = tkinter.Scale(top_frame, orient="horizontal", command=set_freq, tickinterval=0.5, width=15, resolution=0.1, length=4000,
-                            from_=0, to=10, fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
-freq_slider.pack()
-freq_slider.pack(side="left", padx=20, pady=10)
-status_label = tkinter.Label(top_frame, text="Status :",
-                             fg=COLORS["fg"], bg=COLORS["bg"], font=("Helvetica", 18))
-status_label.pack()
+    label = tkinter.Label(top_frame, text="Fréquence (Hz)",
+                        fg=COLORS["fg"], bg=COLORS["bg"], font=("Helvetica", 18))
+    label.pack(side="top")
 
 
-bottom_frame = tkinter.Frame(base, bg=COLORS["bg"])
-bottom_frame.pack(side="bottom", fill="x")
+    freq_slider = tkinter.Scale(top_frame, orient="horizontal", command=set_freq, tickinterval=0.5, width=15, resolution=0.1, length=4000,
+                                from_=0, to=10, fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
+    freq_slider.pack()
+    freq_slider.pack(side="left", padx=20, pady=10)
+    status_label = tkinter.Label(top_frame, text="Status :",
+                                fg=COLORS["fg"], bg=COLORS["bg"], font=("Helvetica", 18))
+    status_label.pack()
 
-button_freq = tkinter.Button(bottom_frame, text="Lancer le Mouvement",
-                             command=osciller, fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
-button_freq.pack(side="left", padx=20, pady=20)
+
+    bottom_frame = tkinter.Frame(base, bg=COLORS["bg"])
+    bottom_frame.pack(side="bottom", fill="x")
+
+    button_freq = tkinter.Button(bottom_frame, text="Lancer le Mouvement",
+                                command=osciller, fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
+    button_freq.pack(side="left", padx=20, pady=20)
 
 
-button_rec = tkinter.Button(bottom_frame, text=rec_btn_str, command=record,
-                            fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
-button_rec.pack(side="left", padx=20, pady=20)
+    button_rec = tkinter.Button(bottom_frame, text=rec_btn_str, command=record,
+                                fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
+    button_rec.pack(side="left", padx=20, pady=20)
 
-button_file = tkinter.Button(bottom_frame, text="Enregistrer le fichier",
-                             command=save, fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
-button_file.pack(side="left", padx=20, pady=20)
-button_reset = tkinter.Button(bottom_frame, text="Reset Capteur", command=reset_cap,
-                              fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
-button_reset.pack(side="left", padx=20, pady=20)
-button_reset_marlin = tkinter.Button(bottom_frame, text="Reset Printer",
-                                     command=reset_mar, fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
-button_reset_marlin.pack(side="left", padx=20, pady=20)
-base.state("zoomed")
-tkinter.mainloop()
+    button_file = tkinter.Button(bottom_frame, text="Enregistrer le fichier",
+                                command=save, fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
+    button_file.pack(side="left", padx=20, pady=20)
+    button_reset = tkinter.Button(bottom_frame, text="Reset Capteur", command=reset_cap,
+                                fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
+    button_reset.pack(side="left", padx=20, pady=20)
+    button_reset_marlin = tkinter.Button(bottom_frame, text="Reset Printer",
+                                        command=reset_mar, fg=COLORS["fg"], bg=COLORS["accent"], font=("Helvetica", 18))
+    button_reset_marlin.pack(side="left", padx=20, pady=20)
+    base.state("zoomed")
+    tkinter.mainloop()
 # record()
 # plt.show()
 # print(filename)
