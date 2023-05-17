@@ -7,8 +7,8 @@ from numpy.fft import fft
 
 
 
-folder = "masse en haut faible amplitude/"
-liste_fichier  = os.listdir("ToClean/"+folder)
+folder = ""
+liste_fichier  = os.listdir("ToClean/")
 #print(np.genfromtxt("../Mesures/Bode à vide/0.3Hz.csv",delimiter=";"))
 def clean() : 
     for name in tqdm(liste_fichier) :
@@ -155,7 +155,7 @@ if __name__ == "__main__" :
         #folder = "masse en haut faible amplitude/"
         try : 
             folder = folder + "/"
-            liste_fichier  = os.listdir("ToClean/"+folder+"/")
+            liste_fichier  = os.listdir("ToClean/"+folder)
             clean()
             print(f"\033[92mfolder Cleaned, creating bode diagramm\033[0m")
         except :
