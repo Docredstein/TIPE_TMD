@@ -102,7 +102,8 @@ def bode()  :
     plt.grid(True,"both")
     plt.suptitle(folder.split("/")[-2])
     plt.savefig("Image/"+folder.replace(" ","_").split("/")[-2]+".pdf")
-    out = np.concatenate((freq,gain,phase)).reshape((len(freq),3))
+    out = [[freq[i],gain[i],phase[i]] for i in range(len(freq))]
+    print(out)
     np.savetxt(folder.split("/")[-2]+".csv",out,delimiter=";")
     #plt.show()
     return (freq, gain, phase)
@@ -143,7 +144,7 @@ def bode_norme()  :
     plt.grid(True,"both")
     plt.suptitle(folder.split("/")[-2]+"en norme")
     plt.savefig("Image/"+folder.replace(" ","_").split("/")[-2]+"_norme"+".pdf")
-    out = np.concatenate((freq,gain,phase)).reshape((len(freq),3))
+    out = np.concatenate((freq,gain,phase)).transpose()
     np.savetxt(folder.split("/")[-2]+"_norme"+".csv",out,delimiter=";")
     #plt.show()
     return (freq, gain, phase)
@@ -165,6 +166,6 @@ if __name__ == "__main__" :
         #bode_norme() #Ne fonctionne pas ==> ce n'est pas linéaire
         print(f"\033[92mfolder completely treated\033[0m")
     print(f"\033[92m\033[4mfolder all done")
-    
+    #plt.show()
 
 
