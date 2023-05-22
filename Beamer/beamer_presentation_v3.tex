@@ -7,7 +7,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{mathrsfs}
-
+\usepackage{subfigure}
 % Ajouter le plan en haut
 \useoutertheme{infolines}
 \setbeamertemplate{headline}{
@@ -16,18 +16,17 @@
 \end{beamercolorbox}}
 
 \title[]
-{Atténuation des vibrations grâce à
-	un amortisseur harmonique passif}
+{Sécurisation de batiment par amortisseur harmonique}
 
 \subtitle{}
 
-\author{Noé Bocquillon} % (optional, for multiple authors)
+\author{FRAMBOURT Mateïs} % (optional, for multiple authors)
 
 
 
 
-\date[n°20041] % (optional)
-{Numéro de candidat:\\ 20041}
+\date[N°42185] % (optional)
+{Numéro de candidat:\\ 42185}
 
 %\logo{\includegraphics[height=0.8cm]{logo_uoft}}
 
@@ -38,6 +37,7 @@
 \begin{document}
 	
 	\frame{\titlepage}
+	%En Binôme avec BOCQUILLON Noé
 	\section{Préambule}
 	\begin{frame}{Préambule}
 		\frametitle{Introduction}
@@ -47,8 +47,8 @@
 			\begin{column}{0.45\textwidth}
 				\begin{figure}
 					\centering
-					\includegraphics[width=\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos/image tmd pont}
-					\caption{Tuned mass damper sur un pont}
+					\includegraphics[width=\textwidth]{Image/TMD pont.jpg}
+					\caption{Tuned mass damper sur l'Infinity bridge}
 				\end{figure}
 				
 			\end{column}
@@ -56,7 +56,7 @@
 				\begin{figure}
 					\centering
 					\caption{ Pendule de la tour Tapei 101 à Taiwan}
-					\includegraphics[width=\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos/image tour tawai pendule}
+					\includegraphics[width=\textwidth]{Image/Taipeï.jpg}
 				\end{figure}
 			\end{column}
 		\end{columns}
@@ -66,12 +66,13 @@
 	%\section{First section}
 	\begin{frame}{Préambule}
 		\frametitle{Objectifs}
-		\underline{Problématique:} Quelle est l'influence du Tuned Mass Damper lors d'une excitation extérieure ? 
+		\underline{Problématique:} Quelle est l'influence du TMD sur la stabilité de la tour ? 
 		\vspace{12pt}
 		\linebreak[3]Objectifs du TIPE:
 		\begin{itemize}
-			\item\ Modéliser un immeuble subissant une contrainte extérieure
-			\item Étudier l'influence du TMD et de ses paramètres sur l'atténuation des vibrations de la maquette
+			\item Maquettiser un immeuble
+			\item Élaborer une excitation sinusoïdale de fréquence paramétrable
+			\item Mesurer la position relative de l'immeuble
 			
 		\end{itemize}
 		
@@ -79,62 +80,161 @@
 	
 	\begin{frame}{Plan}
 		\begin{enumerate}
-			\item\huge{Construction de la maquette et développement de l'outil de vibration} \linebreak
-			\item Mise en vibration de la maquette\linebreak
-			\item Élaboration d'un modèle théorique et conclusion 
+			\item Modèle théorique
+			\item Maquettisation de l'immeuble
+			\item Création de l'axe d'excitation
+			\item Élaboration de l'ensemble des capteurs
 		\end{enumerate}
 	\end{frame}
-	
-	\section{Construction de la maquette}
-	\begin{frame}{Construction de la maquette}
-		Schéma global du système
+	\section{Théorie}
+	\begin{frame}
 		\begin{columns}
-			\begin{column}{0.3\textwidth}
+			\begin{column}{0.5\textwidth}
 				\begin{figure}
-					\includegraphics[width=\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos comp/IMG_3412-min.JPG}
-					\caption{Montage global}
+					\includegraphics[width=\textwidth]{Image/Schéma modélisation.png}
+					\caption{Schéma de la modélisation}
 				\end{figure}
-				%Changer photo , plus global plus zoom
 			\end{column}
-			\begin{column}{0.3\textwidth}
-			
-			\begin{figure}
-				\includegraphics[width=\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos comp/IMG_3380-min.JPG}
-				\caption{Maquette de l'immeuble}
-			\end{figure}
-			\end{column}
-	
-		\begin{column}{0.2\textwidth}
-				Contraintes:
-		\begin{itemize}
-			\item Taille
-			\item Flexibilité \\
-		\end{itemize}
-		\end{column}
-	\end{columns}
-	\end{frame}
-
-	
-	\begin{frame}{Construction de la maquette}
-		\frametitle{Pendule}
-		\begin{columns}
-			\begin{column}{0,45\textwidth}
-				\begin{figure}
-					\includegraphics[width=0.6\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos comp/IMG_E3392-min.JPG}
-					\caption{Pendule}
-				\end{figure}
+			\begin{column}{0.5\textwidth}
+				On a donc sans le pendule : $H=\frac{1}{1+j\frac{c}{k}\omega-\frac{M}{k}\omega^2}$ 
+				
 			\end{column}
 		\end{columns}
-
 	\end{frame}
 
+	\section{Maquette} 
+	\begin{frame}{Objectif de la Maquettisation}
+		\begin{columns}
+		\begin{column}{0.3\textwidth}
+			
+		
+		
+		\begin{itemize}
+			\item Objectif : Obtenir un comportement similaire 
+			\item étude de différente solution
+		\end{itemize}
+	\end{column}
+	\begin{column}{0.7\textwidth}
+		\begin{figure}
+			\includegraphics[width=\textwidth]{Image/Objectif en courbe.jpg}
+			\caption{\copyright euphonics.org}
+		\end{figure}
+	\end{column}
+	\end{columns}
+	\end{frame}
+	\begin{frame}{modèle naïf}
+		\begin{columns}
+			\begin{column}{0.25\textwidth}
+			\includegraphics[width=\textwidth]{Image/Modèle solide face échelle main.jpg}
+			
+		\end{column}
+		\begin{column}{0.25\textwidth}
+		\includegraphics[width=\textwidth]{Image/Photo Mateïs échelle modèle solide.jpg}
+			
+		\end{column}
+		\begin{column}{0.25\textwidth}
+		\includegraphics[width=\textwidth]{Image/Modèle solide Profil.jpg}
+		
+		\end{column}
+		\begin{column}{0.25\textwidth}
+			\begin{itemize}
+				\item Rapide à construire 
+				\item trop rigide
+			\end{itemize}
+		\end{column}
+		\end{columns}
+		
+	\end{frame}
+\begin{frame}{Modèle flexible}
+	\begin{columns}
+		\begin{column}{0.25\textwidth}
+			\begin{figure}
+				
+			
+			\includegraphics[width=\textwidth]{Image/Tour flexible sur tableau blanc.jpg}
+			\caption{Tour flexible}
+		\end{figure}
+		\end{column}
+		\begin{column}{0.75\textwidth}
+			\begin{figure}
+				
+			
+		\includegraphics[width=\textwidth]{Image/modèle incorrect.png}
+		\caption{Modèle incorrect mais allure bonne}
+	\end{figure}	
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			
+		
+	
+	Contrainte : 
+	\begin{itemize}
+		\item Fonctionnement linéaire 
+		\item Résonance dans l'intervalle [0.5,7Hz]
+		\item facilement modifiable
+	\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+	Limite imposée : 
+	\begin{itemize}
+		\item faible amplitude d'oscillations
+		\item surface minimale
+	\end{itemize}
+
+\end{column}
+\end{columns}
+\end{frame}
+\begin{frame}{problème de non-linéarité}
+	\begin{columns}
+		\begin{column}{0.35\textwidth}
+			\begin{figure}
+				
+			
+			\includegraphics[width=\textwidth]{Image/Problème de torsion.jpg}
+			\caption{Problème de torsion}
+		\end{figure}
+		\end{column}
+		\begin{column}{0.35\textwidth}
+			\begin{figure}
+				\includegraphics[width=\textwidth]{Image/Cause de la torsion.jpg}
+				\caption{Cause de la torsion}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}{Pendule réglable}
+	\begin{columns}
+		
+	\begin{column}{0.35\textwidth}
+		
+	
+	\begin{figure}
+		\includegraphics[width=\textwidth]{Image/Pendule réglable 2.jpg}
+		\caption{Pendule à tige filetée}
+	\end{figure}
+\end{column}
+\begin{column}{0.65\textwidth}
+	Contrainte : 
+	\begin{itemize}
+		\item Minimum de frottement
+		\item Centre de gravité réglable
+		\item masse réglable
+	\end{itemize}
+\end{column}
+\end{columns}
+\end{frame}
+\section{Mise en vibration de la maquette}
 \begin{frame}{Construction de la maquette}
 		\frametitle{Outil de mise en vibration}
 Un premier échec:
 		\begin{columns}
 			\begin{column}{0.5\textwidth}
 				\begin{figure}
-					\includegraphics[width=0.8\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos comp/IMG_2609-min.JPG}
+					%\includegraphics[width=0.8\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos comp/IMG_2609-min.JPG}
 					\caption{Guidage en translation d'une imprimante}
 				\end{figure}
 			\end{column}
@@ -150,104 +250,208 @@ Un premier échec:
 		\end{columns}
 	\end{frame}
 	
-	\begin{frame}{Construction de la maquette}
-		\frametitle{Outil de mise en vibration}
+	\begin{frame}{Guidage}
+		\frametitle{Premier guidage}
  
 		\begin{columns}
 			\begin{column}{0.5\textwidth}
 				\begin{figure}
-					\includegraphics[width=\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos comp/IMG_3367b-min.JPG}
-					\caption{Mécanisme}
+					\includegraphics[width=\textwidth]{Image/Axe de l'ancien TIPE.jpg}
+					\caption{Guidage récupéré d'un ancien TIPE}
 				\end{figure}
 			\end{column}
 			\begin{column}{0.5\textwidth}
 				Avantages:
 				\begin{itemize}
-					\item\ Facilité pour fixer la structure
-					\item Fréquence réglable \\
-					\item Amplitude réglable 
+					\item Déjà construit
 				\end{itemize}
 				\vspace{12pt}
 				Inconvénients:
 				
 				\begin{itemize}
 					\item Hystérésis
+					\item Frottement non négligeable
+					\item Asservissement à réaliser
 				\end{itemize}
 			\end{column}
 		\end{columns}
-	Ajout du schéma cinématique du système
 	\end{frame}
-	
-	
-	
-	\section{Mise en vibration de la maquette}
-	
-	\begin{frame}{Mise en vibration de la maquette}
-		
-		%schéma de la maquette avec des 2 accéléromètres
-		\frametitle{Capteurs}
+	\begin{frame}{Guidage récupéré}
 		\begin{columns}
-			\begin{column}{0.25\textwidth}
+			\begin{column}{0.3\textwidth}
 				\begin{figure}
-					\includegraphics[width=\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos comp/IMG_3378-min.JPG}
-					\caption{Accéléromètre sur le socle}
+					\includegraphics[width=\textwidth]{Image/Imprimante.png}
+					\caption{Axe d'une imprimante jets d'encre}
 				\end{figure}
 			\end{column}
-			\begin{column}{0.5\textwidth}
+			\begin{column}{0.3\textwidth} 
 				\begin{figure}
-					\includegraphics[width=0.5\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos comp/IMG_E3393-min.JPG}
+					\includegraphics[width=\textwidth]{Image/oscillation début.png}
+					\caption{début des oscillations}
+				\end{figure}
+				
+				
+			\end{column}
+			\begin{column}{0.3\textwidth} 
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/oscillation fin.png}
+					\caption{fin des oscillations}
+				\end{figure}
+				
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{solution à ces problème}
+		\begin{columns}
+			\begin{column}{0.3\textwidth}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/Solution au décalage.png}
+					\caption{Solution au décalage}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.3\textwidth}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/Mesure ruban imprimante.jpg}
+					\caption{Mesure du ruban zébré de l'imprimante}
+				\end{figure}
+				$d=0.2\pm0.05mm$
+			\end{column}
+			\begin{column}{0.3\textwidth}
+				\begin{figure}
+
+					\includegraphics[width=\textwidth]{Image/Soudure Carte imprimante récupérée.jpg}
+					\caption{Tentative de récupération du capteur}
+				\end{figure}
+			\end{column}
+		\end{columns}
+		
+	\end{frame}
+	\begin{frame}{Conclusion sur cet axe}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				Avantages : 
+				\begin{itemize}
+					\item Gratuit
+					\item Solution mécanique déjà construite
+				\end{itemize}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				Inconvénients : 
+				\begin{itemize}
+					\item Asservissement à réaliser
+					\item Dépendance entre la charge et le déplacement
+					\item Moteur faible
+				\end{itemize}
+			\end{column}
+		\end{columns}
+	\end{frame}
+\begin{frame}{Axe imprimé en 3D}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=\textwidth]{Image/Schéma oscillateur position droite.drawio.png}
+				\caption{Schéma cinématique de l'axe}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=\textwidth]{Image/montage excentrique.png}
+				\caption{Montage sur Solidwork}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}{Hystérésis}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=\textwidth]{Image/Schéma oscillateur position droite.drawio.png}
+				\caption{Schéma cinématique de l'axe à droite}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\includegraphics[width=\textwidth]{Image/Schéma oscillateur position gauche.png}
+				\caption{Schéma à gauche}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+\begin{frame}{Conclusion sur cet axe}
+	\begin{columns}
+		\begin{column}{0.3\textwidth}
+			Avantages : 
+			\begin{itemize}
+				\item Modulaire
+				\item Précise sans Asservissement
+				\item facilement rêglable en fréquence
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.3\textwidth}
+			Inconvénients : 
+			\begin{itemize}
+				\item Pièce fragile à l'usure
+				\item Plateforme limité en taille
+				\item Hystérésis
+			\end{itemize}
+			
+		\end{column}
+		\begin{column}{0.3\textwidth}
+			\begin{figure}
+				\includegraphics[width=\textwidth]{Image/Excentrique.jpg}
+				\caption{Réalisation pratique}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+	\begin{frame}{Capteurs}
+		
+		%schéma de la maquette avec des 2 accéléromètres
+		
+		\begin{columns}
+			\begin{column}{0.35\textwidth}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/Carte principale belle photo.JPG}
+					\caption{Accéléromètre du socle}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.35\textwidth}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/Accéléromètre haut belle photo.JPG}
 					\caption{Accéléromètre du haut}
 				\end{figure}
 			\end{column}
-		\end{columns}
-	Permet de tracer des diagrammes de Bode 
-	\end{frame}
-	
-	\begin{frame}{Mise en vibration de la maquette}
-		\frametitle{Première expérience:Réponse à une excitation sinusoïdale}
-		\begin{columns}
 			\begin{column}{0.35\textwidth}
-				\alert{Simulation d'un séisme}
-			\end{column}
-			\begin{column}{0.5\textwidth}
-				Conditions de l'expérience :
-				\begin{itemize}
-					\item Excentration la plus faible 
-					\item Oscillations dans un seul plan
-					\item Plage de fréquences :[0.5 hz;3.5 hz]
-				\end{itemize}	
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/Carte fixe belle photo.JPG}
+					\caption{Carte fixe}
+				\end{figure}
 			\end{column}
 		\end{columns}
-		
-		
-		\begin{figure}
-			Résultats:
-			\includegraphics[scale=0.36]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Sans pendule.png}
-			
-		\end{figure}
+	
 	\end{frame}
 	
-	
-	
-	\begin{frame}{Mise en vibration de la maquette}
 
-		
-		\begin{figure}
-		\centering
-		\includegraphics[scale=0.1]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Masse de 100g à 3cm.png}
-		
-		
-		\centering
-		\includegraphics[scale=0.1]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Masse de 100g à 5cm.png}
-		\end{figure}
+
+	
+	\begin{frame}
+		Pour les réponses sinusoïdales : 
+		\begin{itemize}
+			\item Amplitude minimale
+			\item Fréquence entre [0.5;5Hz]
+			\item Mesure en régime établit 
+		\end{itemize}
 	\end{frame}
 	
 	\begin{frame}{Mise en vibration de la maquette}
 		\frametitle{Première expérience:Réponse à une excitation sinusoïdale}
 		\centering
-		\includegraphics[scale=0.34]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Masse de 100g à 9.4 cm.png}
-		\\
-		\vspace{12pt}
+		\begin{figure}
+			
+		
+		\includegraphics[scale=0.34]{Image/masse_en_bas_(9.4gcm)_de__100g.pdf}
+	\caption{Réponse du système à une excitation sinusoïdale pour une masse de 100g à 9.4 cm }
+	\end{figure}
 		Observations:
 		\begin{itemize}
 			\item Réduction de l'amplitude des oscillations
@@ -258,31 +462,26 @@ Un premier échec:
 	\end{frame}
 	
 	\begin{frame}{}
-		grpahiques: comparaison avec un modèle théorique pour valider ou refuter 
-		revoir la forme des graphiques 
-		mettre la phase
-	\end{frame}
-	\begin{frame}{}
-		intro : plus scientifique, dissipation d'energie , antirésonnace, iterpeler avec les éléments des images,
-	\end{frame}
-	
-	\begin{frame}{Mise en vibration de la maquette}
-		\frametitle{Première expérience:Réponse à une excitation sinusoïdale}
-		Variation de la masse du pendule:
 		\begin{figure}
-			\includegraphics[width=0.26\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos/IMG_E3392.JPG}
-			\caption{Pendule avec une masse de 73.2g}
+			\includegraphics[width=0.8\textwidth]{Image/Objectif en courbe.jpg}
 		\end{figure}
-	\end{frame}
+	\end{frame}	
+
 	
 	\begin{frame}{Mise en vibration de la maquette}
 		\frametitle{Première expérience:Réponse à une excitation sinusoïdale}	
 		\centering
-		\includegraphics[scale=0.32]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Masse de 100g à 5cm.png}
-		
-		
+		\begin{figure}
+			\includegraphics[scale=0.32]{Image/pendule_à_5_cm_de_l'axe_,_100g.pdf}
+			\caption{Même réponse en montant la masse à 5cm}
+		\end{figure}
+			
 		\centering
-		\includegraphics[scale=0.32]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Masse de 73.2g à 5.5cm.png}
+		\begin{figure}
+			\includegraphics[scale=0.32]{Image/masse_à_8cm_de_73,3_g.pdf}
+			\caption{cette fois çi en prennant 73.3g à 8cm}
+		\end{figure}
+		
 		
 		
 	\end{frame}
@@ -291,13 +490,13 @@ Un premier échec:
 	
 	
 	\begin{frame}{Mise en vibration de la maquette}
-		\frametitle{Deuxième expérience:Réponse à une excitation brève}
+		\frametitle{Deuxième expérience:Dirac}
 		\subtitle{bjr}
 		\begin{columns}
 			\begin{column}{0.5\textwidth}
 				\alert{Simulation d'une rafale de vent}
 				\begin{figure}
-					\includegraphics[width=\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Photos/IMG_E3390.JPG}
+					\includegraphics[width=\textwidth]{Image/Montage dirac.jpg}
 					\caption{Excitation brève}
 				\end{figure}
 			\end{column}
@@ -321,15 +520,15 @@ Un premier échec:
 		\begin{columns}[onlytextwidth]
 			\begin{column}{0.33\textwidth}
 				\centering
-				\includegraphics[width=1\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Coup de vent/sans pendule.pdf}
+				%\includegraphics[width=1\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Coup de vent/sans pendule.pdf}
 			\end{column}
 			\begin{column}{0.33\textwidth}
 				\centering
-				\includegraphics[width=1\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Coup de vent/100g 3cm de l'axe.pdf}
+				%\includegraphics[width=1\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Coup de vent/100g 3cm de l'axe.pdf}
 			\end{column}
 			\begin{column}{0.33\textwidth}
 				\centering
-				\includegraphics[width=1\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Coup de vent/100g à 9.4 de l'axe.pdf}
+				%\includegraphics[width=1\textwidth]{C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Données pi/Coup de vent/100g à 9.4 de l'axe.pdf}
 			\end{column}
 		\end{columns}
 		\footnote{A modifier}
@@ -339,51 +538,8 @@ Un premier échec:
 	
 	
 	
-	\section{Élaboration d'un modèle théorique}
-	\begin{frame}{Élaboration d'un modèle théorique}
-		\frametitle{Modélisation du système}
-		
-		\begin{columns}
-			\begin{column}{0.5\textwidth}
-				\begin{figure}
-					\centering
-					\includegraphics[width=0.6\textwidth]{"C:/Users/noebo/OneDrive/Documents/Prépa/TIPE TMD/Présentation/Modélisation.png"}
-					\caption{Modélisation du système}
-				\end{figure}
-			\end{column}
-			\begin{column}{0.5\textwidth}
-				\begin{itemize}
-					\item $M_{2}$=Masse du pendule
-					\item $M_{1}$=Masse de la tour
-					\item K=Coefficient de raideur élastique (Baguettes + bouchons dans notre modèle)
-					\item $C_{2}$= coefficient de frottement du pendule 
-					\item $C_{1}$= coefficient de frottement de la tour
-				\end{itemize}	
-			\end{column}
-		\end{columns}
-		
-	\end{frame}
-	
-	\begin{frame}{Élaboration d'un modèle théorique}
-		\frametitle{Équations du système}	
-		En appliquant le PFD à la tour sans pendule ni excitation\\ extérieure (correspond au dirac):
-		\begin{equation}\label{key}
-			\ddot{x} + \frac{C_{1}}{M_{1}}\dot{x}   +  \frac{k}{M_{1}} = 0
-		\end{equation}\\
-	\vspace{12pt}\\
-		Période naturelle de la tour:\vspace{12pt} \\
-		\begin{columns}
-		\begin{column}{0.5\textwidth}
-				$ T = 2\pi\frac{1}{\sqrt{\frac{K}{M_{1}}-\frac{C_{1}^2}{4M_{1}^2}}}$
-		\end{column}
-		\begin{column}{0.5\textwidth}
-		 Expérimentalement $T= 0,5 s$
-		\end{column}
-	\end{columns}
-	
 
-		
-	\end{frame}
+	
 %	\begin{frame}
 	%	contenu...
 	
@@ -397,6 +553,7 @@ Un premier échec:
 		\begin{itemize}
 			\item Dimensions peu assimilables au réel
 			\item Élasticité trop importante 
+			\item Cependant Résultats comparable au réel.
 		\end{itemize}	
 		\vspace{12pt}
 		
@@ -425,4 +582,48 @@ Un premier échec:
 	%	\frametitle{Annexe}
 	%	Graphique et explication des mesures des coefficients de raideur
 	%\end{frame}
+	\section{Annexe}
+	\begin{frame}{Caractéristique des TMD en introduction}
+		\begin{columns}
+			
+		
+		\begin{column}{0.5\textwidth}
+			
+		
+		\begin{figure}
+			\includegraphics[scale=0.4]{Image/Taipeï.jpg}
+			\caption{\copyright supertalls.fr} 
+		\end{figure}
+	\end{column}
+	\begin{column}{0.5\textwidth}
+		\begin{itemize}
+			\item Masse: 660 Tonnes
+			\item diamètre: 5,5m
+			\item amplitude maximale : 1,5m 
+			\item amortissement: jusqu'à 40\% maximum
+			\item prix : 4 millions de dollars
+		\end{itemize}
+	\end{column}
+
+\end{columns}
+	\end{frame}
+
+	\begin{frame}{Caractéristique des TMD en introduction}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/TMD pont.jpg}
+					\caption{\copyright JohnYeadon}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item Localisation : Stockton-on-Tees
+					\item Masse : 700 Kg
+					\item Nombre : 7 sur l'entiereté du pont
+				\end{itemize}
+			\end{column}
+			
+		\end{columns}
+	\end{frame}
 \end{document}
