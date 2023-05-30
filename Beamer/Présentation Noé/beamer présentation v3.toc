@@ -1,0 +1,7 @@
+\babel@toc {french}{}\relax 
+\beamer@sectionintoc {1}{Préambule}{2}{0}{1}
+\beamer@sectionintoc {2}{Construction de la maquette}{5}{0}{2}
+\beamer@sectionintoc {3}{Théorie}{12}{0}{3}
+\beamer@sectionintoc {4}{Mise en vibration de la maquette}{17}{0}{4}
+\beamer@sectionintoc {5}{Conclusion}{23}{0}{5}
+\beamer@sectionintoc {6}{Annexes}{24}{0}{6}
