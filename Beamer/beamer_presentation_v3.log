@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.21)  22 MAY 2023 06:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.21)  22 MAY 2023 16:09
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -768,12 +768,12 @@ File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [1{C:/Users/franc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-<Image/TMD pont.jpg, id=246, 1204.5pt x 903.375pt>
+<Image/TMD pont.jpg, id=251, 1204.5pt x 903.375pt>
 File: Image/TMD pont.jpg Graphic file (type jpg)
 <use Image/TMD pont.jpg>
 Package pdftex.def Info: Image/TMD pont.jpg  used on input line 64.
 (pdftex.def)             Requested size: 154.03183pt x 115.51306pt.
-<Image/Taipeï.jpg, id=247, 378.6948pt x 250.536pt>
+<Image/Taipeï.jpg, id=252, 378.6948pt x 250.536pt>
 File: Image/Taipeï.jpg Graphic file (type jpg)
 <use Image/Taipeï.jpg>
 Package pdftex.def Info: Image/Taipeï.jpg  used on input line 64.
@@ -801,7 +801,7 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ] [4
 
 ]
-<Image/Schéma modélisation.png, id=534, 787.94376pt x 732.7375pt>
+<Image/Schéma modélisation.png, id=545, 787.94376pt x 732.7375pt>
 File: Image/Schéma modélisation.png Graphic file (type png)
 <use Image/Schéma modélisation.png>
 Package pdftex.def Info: Image/Schéma modélisation.png  used on input line 103.
@@ -809,7 +809,7 @@ Package pdftex.def Info: Image/Schéma modélisation.png  used on input line 103
  [5
 
  <./Image/Schéma modélisation.png>]
-<Image/Objectif en courbe.jpg, id=638, 770.88pt x 578.16pt>
+<Image/Objectif en courbe.jpg, id=651, 770.88pt x 578.16pt>
 File: Image/Objectif en courbe.jpg Graphic file (type jpg)
 <use Image/Objectif en courbe.jpg>
 Package pdftex.def Info: Image/Objectif en courbe.jpg  used on input line 124.
@@ -821,17 +821,17 @@ Overfull \vbox (7.0495pt too high) detected at line 124
 [6
 
  <./Image/Objectif en courbe.jpg>]
-<Image/Modèle solide face échelle main.jpg, id=734, 2276.505pt x 4047.12pt>
+<Image/Modèle solide face échelle main.jpg, id=749, 2276.505pt x 4047.12pt>
 File: Image/Modèle solide face échelle main.jpg Graphic file (type jpg)
 <use Image/Modèle solide face échelle main.jpg>
 Package pdftex.def Info: Image/Modèle solide face échelle main.jpg  used on input line 147.
 (pdftex.def)             Requested size: 85.57382pt x 152.1001pt.
-<Image/Photo Mateïs échelle modèle solide.jpg, id=735, 2276.505pt x 4047.12pt>
+<Image/Photo Mateïs échelle modèle solide.jpg, id=750, 2276.505pt x 4047.12pt>
 File: Image/Photo Mateïs échelle modèle solide.jpg Graphic file (type jpg)
 <use Image/Photo Mateïs échelle modèle solide.jpg>
 Package pdftex.def Info: Image/Photo Mateïs échelle modèle solide.jpg  used on input line 147.
 (pdftex.def)             Requested size: 85.57382pt x 152.1001pt.
-<Image/Modèle solide Profil.jpg, id=736, 2276.505pt x 4047.12pt>
+<Image/Modèle solide Profil.jpg, id=751, 2276.505pt x 4047.12pt>
 File: Image/Modèle solide Profil.jpg Graphic file (type jpg)
 <use Image/Modèle solide Profil.jpg>
 Package pdftex.def Info: Image/Modèle solide Profil.jpg  used on input line 147.
@@ -839,12 +839,12 @@ Package pdftex.def Info: Image/Modèle solide Profil.jpg  used on input line 147
  [7
 
  <./Image/Modèle solide face échelle main.jpg> <./Image/Photo Mateïs échelle modèle solide.jpg> <./Image/Modèle solide Profil.jpg>]
-<Image/Tour flexible sur tableau blanc.jpg, id=832, 2276.505pt x 4047.12pt>
+<Image/Tour flexible sur tableau blanc.jpg, id=849, 2276.505pt x 4047.12pt>
 File: Image/Tour flexible sur tableau blanc.jpg Graphic file (type jpg)
 <use Image/Tour flexible sur tableau blanc.jpg>
 Package pdftex.def Info: Image/Tour flexible sur tableau blanc.jpg  used on input line 167.
 (pdftex.def)             Requested size: 85.57382pt x 152.1001pt.
-<Image/modèle incorrect.png, id=833, 462.528pt x 346.896pt>
+<Image/modèle incorrect.png, id=850, 462.528pt x 346.896pt>
 File: Image/modèle incorrect.png Graphic file (type png)
 <use Image/modèle incorrect.png>
 Package pdftex.def Info: Image/modèle incorrect.png  used on input line 167.
@@ -855,199 +855,214 @@ Overfull \vbox (19.34067pt too high) detected at line 167
 
 [8
 
- <./Image/Tour flexible sur tableau blanc.jpg> <./Image/modèle incorrect.png>] [9
+ <./Image/Tour flexible sur tableau blanc.jpg> <./Image/modèle incorrect.png>]
+<Image/schéma global.png, id=948, 963.6pt x 1003.75pt>
+File: Image/schéma global.png Graphic file (type png)
+<use Image/schéma global.png>
+Package pdftex.def Info: Image/schéma global.png  used on input line 196.
+(pdftex.def)             Requested size: 102.68962pt x 106.96674pt.
+ [9
 
-]
-<Image/Problème de torsion.jpg, id=1023, 4023.03pt x 5364.04pt>
+ <./Image/schéma global.png>]
+<Image/Problème de torsion.jpg, id=1046, 4023.03pt x 5364.04pt>
 File: Image/Problème de torsion.jpg Graphic file (type jpg)
 <use Image/Problème de torsion.jpg>
-Package pdftex.def Info: Image/Problème de torsion.jpg  used on input line 208.
+Package pdftex.def Info: Image/Problème de torsion.jpg  used on input line 214.
 (pdftex.def)             Requested size: 119.80544pt x 159.68652pt.
-<Image/Cause de la torsion.jpg, id=1024, 4023.03pt x 5364.04pt>
+<Image/Cause de la torsion.jpg, id=1047, 4023.03pt x 5364.04pt>
 File: Image/Cause de la torsion.jpg Graphic file (type jpg)
 <use Image/Cause de la torsion.jpg>
-Package pdftex.def Info: Image/Cause de la torsion.jpg  used on input line 208.
+Package pdftex.def Info: Image/Cause de la torsion.jpg  used on input line 214.
 (pdftex.def)             Requested size: 119.80544pt x 159.68652pt.
  [10
 
  <./Image/Problème de torsion.jpg> <./Image/Cause de la torsion.jpg>]
-<Image/Pendule réglable 2.jpg, id=1119, 2276.505pt x 4047.12pt>
+<Image/Pendule réglable 2.jpg, id=1144, 2276.505pt x 4047.12pt>
 File: Image/Pendule réglable 2.jpg Graphic file (type jpg)
 <use Image/Pendule réglable 2.jpg>
-Package pdftex.def Info: Image/Pendule réglable 2.jpg  used on input line 229.
+Package pdftex.def Info: Image/Pendule réglable 2.jpg  used on input line 235.
 (pdftex.def)             Requested size: 119.80544pt x 212.92778pt.
 
-Overfull \vbox (48.17375pt too high) detected at line 229
+Overfull \vbox (48.17375pt too high) detected at line 235
  []
 
 [11
 
- <./Image/Pendule réglable 2.jpg>] [12
-
-]
-<Image/Axe de l'ancien TIPE.jpg, id=1308, 5364.04pt x 4023.03pt>
+ <./Image/Pendule réglable 2.jpg>]
+<Image/Axe de l'ancien TIPE.jpg, id=1241, 5364.04pt x 4023.03pt>
 File: Image/Axe de l'ancien TIPE.jpg Graphic file (type jpg)
 <use Image/Axe de l'ancien TIPE.jpg>
-Package pdftex.def Info: Image/Axe de l'ancien TIPE.jpg  used on input line 278.
+Package pdftex.def Info: Image/Axe de l'ancien TIPE.jpg  used on input line 264.
 (pdftex.def)             Requested size: 171.14764pt x 128.359pt.
- [13
+ [12
 
  <./Image/Axe de l'ancien TIPE.jpg>]
-<Image/Imprimante.png, id=1404, 1284.8pt x 722.7pt>
+<Image/Imprimante.png, id=1338, 1284.8pt x 722.7pt>
 File: Image/Imprimante.png Graphic file (type png)
 <use Image/Imprimante.png>
-Package pdftex.def Info: Image/Imprimante.png  used on input line 303.
-(pdftex.def)             Requested size: 102.68962pt x 57.76204pt.
-<Image/oscillation début.png, id=1405, 1284.8pt x 722.7pt>
+Package pdftex.def Info: Image/Imprimante.png  used on input line 274.
+(pdftex.def)             Requested size: 273.83728pt x 154.0321pt.
+ [13
+
+ <./Image/Imprimante.png (PNG copy)>]
+<Image/oscillation début.png, id=1436, 1284.8pt x 722.7pt>
 File: Image/oscillation début.png Graphic file (type png)
 <use Image/oscillation début.png>
-Package pdftex.def Info: Image/oscillation début.png  used on input line 303.
-(pdftex.def)             Requested size: 102.68962pt x 57.76204pt.
-<Image/oscillation fin.png, id=1406, 1284.8pt x 722.7pt>
+Package pdftex.def Info: Image/oscillation début.png  used on input line 293.
+(pdftex.def)             Requested size: 171.14764pt x 96.27007pt.
+<Image/oscillation fin.png, id=1437, 1284.8pt x 722.7pt>
 File: Image/oscillation fin.png Graphic file (type png)
 <use Image/oscillation fin.png>
-Package pdftex.def Info: Image/oscillation fin.png  used on input line 303.
-(pdftex.def)             Requested size: 102.68962pt x 57.76204pt.
+Package pdftex.def Info: Image/oscillation fin.png  used on input line 293.
+(pdftex.def)             Requested size: 171.14764pt x 96.27007pt.
  [14
 
- <./Image/Imprimante.png (PNG copy)> <./Image/oscillation début.png (PNG copy)> <./Image/oscillation fin.png (PNG copy)>]
-<Image/Solution au décalage.png, id=1501, 1284.8pt x 722.7pt>
+ <./Image/oscillation début.png (PNG copy)> <./Image/oscillation fin.png (PNG copy)>]
+<Image/Solution au décalage.png, id=1534, 1284.8pt x 722.7pt>
 File: Image/Solution au décalage.png Graphic file (type png)
 <use Image/Solution au décalage.png>
-Package pdftex.def Info: Image/Solution au décalage.png  used on input line 328.
+Package pdftex.def Info: Image/Solution au décalage.png  used on input line 318.
 (pdftex.def)             Requested size: 102.68962pt x 57.76204pt.
-<Image/Mesure ruban imprimante.jpg, id=1502, 1927.2pt x 1084.05pt>
+<Image/Mesure ruban imprimante.jpg, id=1535, 1927.2pt x 1084.05pt>
 File: Image/Mesure ruban imprimante.jpg Graphic file (type jpg)
 <use Image/Mesure ruban imprimante.jpg>
-Package pdftex.def Info: Image/Mesure ruban imprimante.jpg  used on input line 328.
+Package pdftex.def Info: Image/Mesure ruban imprimante.jpg  used on input line 318.
 (pdftex.def)             Requested size: 102.68962pt x 57.76204pt.
-<Image/Soudure Carte imprimante récupérée.jpg, id=1503, 4023.03pt x 5364.04pt>
+<Image/Soudure Carte imprimante récupérée.jpg, id=1536, 4023.03pt x 5364.04pt>
 File: Image/Soudure Carte imprimante récupérée.jpg Graphic file (type jpg)
 <use Image/Soudure Carte imprimante récupérée.jpg>
-Package pdftex.def Info: Image/Soudure Carte imprimante récupérée.jpg  used on input line 328.
+Package pdftex.def Info: Image/Soudure Carte imprimante récupérée.jpg  used on input line 318.
 (pdftex.def)             Requested size: 102.68962pt x 136.85078pt.
  [15
 
  <./Image/Solution au décalage.png (PNG copy)> <./Image/Mesure ruban imprimante.jpg> <./Image/Soudure Carte imprimante récupérée.jpg>] [16
 
 ]
-<Image/Schéma oscillateur position droite.drawio.png, id=1694, 833.1125pt x 612.2875pt>
+<Image/Schéma oscillateur position droite.drawio.png, id=1731, 833.1125pt x 612.2875pt>
 File: Image/Schéma oscillateur position droite.drawio.png Graphic file (type png)
 <use Image/Schéma oscillateur position droite.drawio.png>
-Package pdftex.def Info: Image/Schéma oscillateur position droite.drawio.png  used on input line 363.
+Package pdftex.def Info: Image/Schéma oscillateur position droite.drawio.png  used on input line 353.
 (pdftex.def)             Requested size: 171.14764pt x 125.78134pt.
-<Image/montage excentrique.png, id=1695, 633.567pt x 401.0985pt>
+<Image/montage excentrique.png, id=1732, 633.567pt x 401.0985pt>
 File: Image/montage excentrique.png Graphic file (type png)
 <use Image/montage excentrique.png>
-Package pdftex.def Info: Image/montage excentrique.png  used on input line 363.
+Package pdftex.def Info: Image/montage excentrique.png  used on input line 353.
 (pdftex.def)             Requested size: 171.14764pt x 108.347pt.
  [17
 
  <./Image/Schéma oscillateur position droite.drawio.png> <./Image/montage excentrique.png>]
 File: Image/Schéma oscillateur position droite.drawio.png Graphic file (type png)
 <use Image/Schéma oscillateur position droite.drawio.png>
-Package pdftex.def Info: Image/Schéma oscillateur position droite.drawio.png  used on input line 379.
+Package pdftex.def Info: Image/Schéma oscillateur position droite.drawio.png  used on input line 369.
 (pdftex.def)             Requested size: 171.14764pt x 125.78134pt.
-<Image/Schéma oscillateur position gauche.png, id=1792, 1063.975pt x 657.45625pt>
+<Image/Schéma oscillateur position gauche.png, id=1831, 1063.975pt x 657.45625pt>
 File: Image/Schéma oscillateur position gauche.png Graphic file (type png)
 <use Image/Schéma oscillateur position gauche.png>
-Package pdftex.def Info: Image/Schéma oscillateur position gauche.png  used on input line 379.
+Package pdftex.def Info: Image/Schéma oscillateur position gauche.png  used on input line 369.
 (pdftex.def)             Requested size: 171.14764pt x 105.7469pt.
  [18
 
  <./Image/Schéma oscillateur position gauche.png>]
-<Image/Excentrique.jpg, id=1888, 2276.505pt x 4047.12pt>
+<Image/Excentrique.jpg, id=1929, 2276.505pt x 4047.12pt>
 File: Image/Excentrique.jpg Graphic file (type jpg)
 <use Image/Excentrique.jpg>
-Package pdftex.def Info: Image/Excentrique.jpg  used on input line 406.
+Package pdftex.def Info: Image/Excentrique.jpg  used on input line 396.
 (pdftex.def)             Requested size: 102.68962pt x 182.54482pt.
 
-Overfull \vbox (19.73476pt too high) detected at line 406
+Overfull \vbox (19.73476pt too high) detected at line 396
  []
 
 [19
 
  <./Image/Excentrique.jpg>]
-<Image/Carte principale belle photo.JPG, id=1984, 932.7648pt x 624.4128pt>
+<Image/Carte principale belle photo.JPG, id=2027, 932.7648pt x 624.4128pt>
 File: Image/Carte principale belle photo.JPG Graphic file (type jpg)
 <use Image/Carte principale belle photo.JPG>
-Package pdftex.def Info: Image/Carte principale belle photo.JPG  used on input line 432.
+Package pdftex.def Info: Image/Carte principale belle photo.JPG  used on input line 422.
 (pdftex.def)             Requested size: 119.80544pt x 80.19514pt.
-<Image/Accéléromètre haut belle photo.JPG, id=1985, 932.7648pt x 624.4128pt>
+<Image/Accéléromètre haut belle photo.JPG, id=2028, 932.7648pt x 624.4128pt>
 File: Image/Accéléromètre haut belle photo.JPG Graphic file (type jpg)
 <use Image/Accéléromètre haut belle photo.JPG>
-Package pdftex.def Info: Image/Accéléromètre haut belle photo.JPG  used on input line 432.
+Package pdftex.def Info: Image/Accéléromètre haut belle photo.JPG  used on input line 422.
 (pdftex.def)             Requested size: 119.80544pt x 80.19514pt.
-<Image/Carte fixe belle photo.JPG, id=1986, 932.7648pt x 624.4128pt>
+<Image/Carte fixe belle photo.JPG, id=2029, 932.7648pt x 624.4128pt>
 File: Image/Carte fixe belle photo.JPG Graphic file (type jpg)
 <use Image/Carte fixe belle photo.JPG>
-Package pdftex.def Info: Image/Carte fixe belle photo.JPG  used on input line 432.
+Package pdftex.def Info: Image/Carte fixe belle photo.JPG  used on input line 422.
 (pdftex.def)             Requested size: 119.80544pt x 80.19514pt.
  [20
 
  <./Image/Carte principale belle photo.JPG> <./Image/Accéléromètre haut belle photo.JPG> <./Image/Carte fixe belle photo.JPG>] [21
 
 ]
-<Image/masse_en_bas_(9.4gcm)_de__100g.pdf, id=2175, 722.7pt x 361.35pt>
+<Image/masse_en_bas_(9.4gcm)_de__100g.pdf, id=2222, 722.7pt x 361.35pt>
 File: Image/masse_en_bas_(9.4gcm)_de__100g.pdf Graphic file (type pdf)
 <use Image/masse_en_bas_(9.4gcm)_de__100g.pdf>
-Package pdftex.def Info: Image/masse_en_bas_(9.4gcm)_de__100g.pdf  used on input line 462.
+Package pdftex.def Info: Image/masse_en_bas_(9.4gcm)_de__100g.pdf  used on input line 445.
 (pdftex.def)             Requested size: 245.71474pt x 122.85738pt.
+ [22
 
-Overfull \vbox (13.632pt too high) detected at line 462
- []
-
-[22
-
- <./Image/masse_en_bas_(9.4gcm)_de__100g.pdf>]
-File: Image/Objectif en courbe.jpg Graphic file (type jpg)
-<use Image/Objectif en courbe.jpg>
-Package pdftex.def Info: Image/Objectif en courbe.jpg  used on input line 468.
-(pdftex.def)             Requested size: 273.83728pt x 205.37614pt.
- [23
+ <./Image/masse_en_bas_(9.4gcm)_de__100g.pdf>] [23
 
 ]
-<Image/pendule_à_5_cm_de_l'axe_,_100g.pdf, id=2413, 722.7pt x 361.35pt>
+File: Image/Objectif en courbe.jpg Graphic file (type jpg)
+<use Image/Objectif en courbe.jpg>
+Package pdftex.def Info: Image/Objectif en courbe.jpg  used on input line 461.
+(pdftex.def)             Requested size: 273.83728pt x 205.37614pt.
+ [24
+
+]
+<Image/pendule_à_5_cm_de_l'axe_,_100g.pdf, id=2560, 722.7pt x 361.35pt>
 File: Image/pendule_à_5_cm_de_l'axe_,_100g.pdf Graphic file (type pdf)
 <use Image/pendule_à_5_cm_de_l'axe_,_100g.pdf>
-Package pdftex.def Info: Image/pendule_à_5_cm_de_l'axe_,_100g.pdf  used on input line 487.
+Package pdftex.def Info: Image/pendule_à_5_cm_de_l'axe_,_100g.pdf  used on input line 480.
 (pdftex.def)             Requested size: 231.26872pt x 115.63435pt.
-<Image/masse_à_8cm_de_73,3_g.pdf, id=2414, 722.7pt x 361.35pt>
+<Image/masse_à_8cm_de_73,3_g.pdf, id=2561, 722.7pt x 361.35pt>
 File: Image/masse_à_8cm_de_73,3_g.pdf Graphic file (type pdf)
 <use Image/masse_à_8cm_de_73,3_g.pdf>
-Package pdftex.def Info: Image/masse_à_8cm_de_73,3_g.pdf  used on input line 487.
+Package pdftex.def Info: Image/masse_à_8cm_de_73,3_g.pdf  used on input line 480.
 (pdftex.def)             Requested size: 231.26872pt x 115.63435pt.
 
-Overfull \vbox (94.60263pt too high) detected at line 487
+Overfull \vbox (94.60263pt too high) detected at line 480
  []
 
-[24
+[25
 
  <./Image/pendule_à_5_cm_de_l'axe_,_100g.pdf> <./Image/masse_à_8cm_de_73,3_g.pdf>]
-<Image/Montage dirac.jpg, id=2611, 4047.12pt x 2276.505pt>
+<Image/Montage dirac.jpg, id=2761, 4047.12pt x 2276.505pt>
 File: Image/Montage dirac.jpg Graphic file (type jpg)
 <use Image/Montage dirac.jpg>
-Package pdftex.def Info: Image/Montage dirac.jpg  used on input line 511.
+Package pdftex.def Info: Image/Montage dirac.jpg  used on input line 504.
 (pdftex.def)             Requested size: 171.14764pt x 96.25519pt.
- [25
+ [26
 
- <./Image/Montage dirac.jpg>] [26
+ <./Image/Montage dirac.jpg>]
+<Image/Dirac.png, id=2858, 1110.0672pt x 544.9158pt>
+File: Image/Dirac.png Graphic file (type png)
+<use Image/Dirac.png>
+Package pdftex.def Info: Image/Dirac.png  used on input line 524.
+(pdftex.def)             Requested size: 342.2953pt x 168.02415pt.
 
-] [27
+Overfull \vbox (38.3226pt too high) detected at line 524
+ []
+
+[27
+
+ <./Image/Dirac.png>] [28
 
 ]
 File: Image/Taipeï.jpg Graphic file (type jpg)
 <use Image/Taipeï.jpg>
-Package pdftex.def Info: Image/Taipeï.jpg  used on input line 609.
+Package pdftex.def Info: Image/Taipeï.jpg  used on input line 598.
 (pdftex.def)             Requested size: 151.47522pt x 100.21262pt.
- [28
+ [29
 
 ]
 File: Image/TMD pont.jpg Graphic file (type jpg)
 <use Image/TMD pont.jpg>
-Package pdftex.def Info: Image/TMD pont.jpg  used on input line 628.
+Package pdftex.def Info: Image/TMD pont.jpg  used on input line 617.
 (pdftex.def)             Requested size: 171.14764pt x 128.36009pt.
- [29
+ [30
 
 ]
 \tf@nav=\write6
@@ -1064,17 +1079,17 @@ Package rerunfilecheck Info: File `beamer_presentation_v3.out' has not changed.
 (rerunfilecheck)             Checksum: 9257E88BB56F8112C7227E04E0D62768;639.
  ) 
 Here is how much of TeX's memory you used:
- 24467 strings out of 475389
- 483996 string characters out of 2777000
- 804345 words of memory out of 3000000
- 45224 multiletter control sequences out of 15000+600000
+ 24485 strings out of 475389
+ 484356 string characters out of 2777000
+ 805298 words of memory out of 3000000
+ 45238 multiletter control sequences out of 15000+600000
  482731 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,20n,122p,469b,779s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1000.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss0600.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on beamer_presentation_v3.pdf (29 pages, 33397822 bytes).
+Output written on beamer_presentation_v3.pdf (30 pages, 33557160 bytes).
 PDF statistics:
- 3376 PDF objects out of 3580 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
- 283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3536 PDF objects out of 3580 (max. 8388607)
+ 67 named destinations out of 1000 (max. 500000)
+ 293 words of extra memory for PDF output out of 10000 (max. 10000000)
 

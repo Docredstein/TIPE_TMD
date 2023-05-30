@@ -3,5 +3,5 @@
 \beamer@sectionintoc {2}{Théorie}{5}{0}{2}
 \beamer@sectionintoc {3}{Maquette}{6}{0}{3}
 \beamer@sectionintoc {4}{Mise en vibration de la maquette}{12}{0}{4}
-\beamer@sectionintoc {5}{Conclusion}{27}{0}{5}
-\beamer@sectionintoc {6}{Annexe}{28}{0}{6}
+\beamer@sectionintoc {5}{Conclusion}{28}{0}{5}
+\beamer@sectionintoc {6}{Annexe}{29}{0}{6}

@@ -27,7 +27,7 @@ def clean() :
             std = np.std(frame[:,i]) 
             mean = np.mean(frame[:,i])
             for j in frame[:,i] :
-                if abs(j-mean)>2*std :
+                if abs(j-mean)>10*std :
                     out.append(0)
                 else :
                     out.append(j-mean)

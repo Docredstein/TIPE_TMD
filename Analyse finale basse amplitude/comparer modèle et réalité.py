@@ -1,15 +1,16 @@
 import matplotlib.pyplot as plt 
 import numpy as np 
-k = 2.7
-c = 0.002
-Hzero=1
-M = 0.2
+import scipy.optimize as opti
+
 j=1j
 frame = np.genfromtxt("sans pendule.csv",delimiter=";")
 
 
-def fonction_de_transfert(w:float) : 
-    return Hzero/(1+(c/k)*j*w - (M/k)*w**2)
+def fonction_de_transfert(w:float,M=0.15,c=7.85e-8,k=1.98) : 
+    return 1/(1+(c/k)*j*w - (M/k)*w**2)
+def gain(w:float,c,K) : 
+    M=0.15
+    return 20*np.log10(np.absolute(fonction_de_transfert(w,M,c,K)))
 plt.figure() 
 ax =plt.subplot(2,1,1)
 ax.set_xscale("log")
@@ -24,8 +25,9 @@ plt.semilogx(w,g,label="modèle")
 plt.legend()
 ax = plt.subplot(2,1,2)
 ax.set_xscale("log")
-plt.semilogx(frame[:,0],frame[:,2],"rx")
+plt.semilogx(frame[:,0],-np.pi-frame[:,2],"rx")
 plt.xlabel("$\omega$")
 plt.ylabel("$\phi$")
 plt.semilogx(w,phi)
+print(opti.curve_fit(gain,frame[:,0],frame[:,1],(0.01,3.8)))
 plt.show()
