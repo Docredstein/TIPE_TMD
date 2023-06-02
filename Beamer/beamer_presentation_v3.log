@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.21)  22 MAY 2023 16:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.9.21)  31 MAY 2023 01:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -609,31 +609,78 @@ Package: subfigure 2002/07/30 v2.1.4 subfigure package
 (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/subfigure\subfigure.cfg)
 \subfig@top=\skip68
 \subfig@bottom=\skip69
+) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\empheq.sty
+Package: empheq 2017/03/31 v2.15 Emphasizing equations
+ (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+Package: mathtools 2022/06/29 v1.29 mathematical typesetting tools
+ (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count347
+\calc@Bcount=\count348
+\calc@Adimen=\dimen303
+\calc@Bdimen=\dimen304
+\calc@Askip=\skip70
+\calc@Bskip=\skip71
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count349
+\calc@Cskip=\skip72
+)
+\g_MT_multlinerow_int=\count350
+\l_MT_multwidth_dim=\dimen305
+\origjot=\skip73
+\l_MT_shortvdotswithinadjustabove_dim=\dimen306
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen307
+\l_MT_above_intertext_sep=\dimen308
+\l_MT_below_intertext_sep=\dimen309
+\l_MT_above_shortintertext_sep=\dimen310
+\l_MT_below_shortintertext_sep=\dimen311
+\xmathstrut@box=\box76
+\xmathstrut@dim=\dimen312
+)
+\l_EQ_equationtype_int=\count351
+\l_EQ_alignmentmode_int=\count352
+\l_EQ_totalwidth_dim=\dimen313
+\l_EQ_displaywidth_dim=\dimen314
+\l_EQ_temp_linewidth_dim=\dimen315
+\l_EQ_linewidth_dim=\dimen316
+\EmphEqdelimitershortfall=\dimen317
+\EmphEqdelimiterfactor=\count353
+\g_EQ_toptag_height_dim=\dimen318
+\g_EQ_bottomtag_depth_dim=\dimen319
+\g_EQ_toprow_height_dim=\dimen320
+\g_EQ_bottomrow_depth_dim=\dimen321
+\g_EQ_widesttag_dim=\dimen322
+\EQ_mathdisplay_box=\box77
+\EQ_tag_box=\box78
+\g_EQ_temprow_int=\count354
 ) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count347
-\l__pdf_internal_box=\box76
+\l__color_backend_stack_int=\count355
+\l__pdf_internal_box=\box79
 ) (beamer_presentation_v3.aux)
 \openout1 = `beamer_presentation_v3.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -671,16 +718,16 @@ LaTeX Font Info:    ... okay on input line 37.
 
 (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count348
-\scratchdimen=\dimen303
-\scratchbox=\box77
-\nofMPsegments=\count349
-\nofMParguments=\count350
+\scratchcounter=\count356
+\scratchdimen=\dimen323
+\scratchbox=\box80
+\nofMPsegments=\count357
+\nofMParguments=\count358
 \everyMPshowfont=\toks46
-\MPscratchCnt=\count351
-\MPscratchDim=\dimen304
-\MPnumerator=\count352
-\makeMPintoPDFobject=\count353
+\MPscratchCnt=\count359
+\MPscratchDim=\dimen324
+\MPnumerator=\count360
+\makeMPintoPDFobject=\count361
 \everyMPtoPDFconversion=\toks47
 ) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -688,64 +735,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 39.
  (beamer_presentation_v3.out) (beamer_presentation_v3.out)
 \@outlinefile=\write5
 \openout5 = `beamer_presentation_v3.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 37.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 39.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 37.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 39.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 37.
+(Font)                  OT1/cmss/m/n --> T1/cmr/m/n on input line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 37.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 37.
+(Font)                  OT1/cmr/bx/n --> T1/cmss/b/n on input line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 37.
+(Font)                  OT1/cmss/m/n --> T1/cmss/m/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 37.
+(Font)                  OT1/cmss/bx/n --> T1/cmss/m/n on input line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 37.
+(Font)                  OT1/cmr/m/it --> T1/cmss/m/it on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 37.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 37.
+(Font)                  OT1/cmr/bx/it --> T1/cmss/m/it on input line 39.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 37.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 37.
+(Font)                  OT1/cmtt/m/n --> T1/cmtt/m/n on input line 39.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 37.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 39.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 37.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 37.
+(Font)                  OT1/cmss/b/n --> T1/cmr/b/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 37.
+(Font)                  T1/cmss/b/n --> T1/cmss/b/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 37.
+(Font)                  T1/cmss/m/n --> T1/cmss/b/n on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 37.
+(Font)                  T1/cmss/m/it --> T1/cmss/b/it on input line 39.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 37.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 37.
+(Font)                  T1/cmtt/m/n --> T1/cmtt/b/n on input line 39.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 39.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `normal' on input line 37.
+(Font)              `pureletters' in the math version `normal' on input line 39.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 37.
+(Font)                  T1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 39.
 LaTeX Font Info:    Encoding `T1' has changed to `OT1' for symbol font
-(Font)              `pureletters' in the math version `bold' on input line 37.
+(Font)              `pureletters' in the math version `bold' on input line 39.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 37.
+(Font)                  T1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 39.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 37.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 39.
  (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-bibliography-dictionary-English.dict
@@ -759,41 +806,41 @@ Dictionary: translator-numbers-dictionary, Language: English
 ) (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/translator\translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \degres on input line 37.
-LaTeX Info: Redefining \up on input line 37.
+LaTeX Info: Redefining \degres on input line 39.
+LaTeX Info: Redefining \up on input line 39.
  (beamer_presentation_v3.nav)
-LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 37.
+LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 39.
  (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 ) [1{C:/Users/franc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-<Image/TMD pont.jpg, id=251, 1204.5pt x 903.375pt>
+<Image/TMD pont.jpg, id=260, 1204.5pt x 903.375pt>
 File: Image/TMD pont.jpg Graphic file (type jpg)
 <use Image/TMD pont.jpg>
-Package pdftex.def Info: Image/TMD pont.jpg  used on input line 64.
+Package pdftex.def Info: Image/TMD pont.jpg  used on input line 66.
 (pdftex.def)             Requested size: 154.03183pt x 115.51306pt.
-<Image/Taipeï.jpg, id=252, 378.6948pt x 250.536pt>
+<Image/Taipeï.jpg, id=261, 378.6948pt x 250.536pt>
 File: Image/Taipeï.jpg Graphic file (type jpg)
 <use Image/Taipeï.jpg>
-Package pdftex.def Info: Image/Taipeï.jpg  used on input line 64.
+Package pdftex.def Info: Image/Taipeï.jpg  used on input line 66.
 (pdftex.def)             Requested size: 154.03183pt x 101.90231pt.
  [2
 
  <./Image/TMD pont.jpg> <./Image/Taipeï.jpg>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
  (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 79.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
  (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 79.
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 81.
  (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 79.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 81.
  (C:\Users\franc\AppData\Local\Programs\MiKTeX\tex/latex/sansmathaccent\ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 ) [3
@@ -801,270 +848,336 @@ File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mat
 ] [4
 
 ]
-<Image/Schéma modélisation.png, id=545, 787.94376pt x 732.7375pt>
+<Image/Schéma modélisation.png, id=560, 787.94376pt x 732.7375pt>
 File: Image/Schéma modélisation.png Graphic file (type png)
 <use Image/Schéma modélisation.png>
-Package pdftex.def Info: Image/Schéma modélisation.png  used on input line 103.
+Package pdftex.def Info: Image/Schéma modélisation.png  used on input line 107.
 (pdftex.def)             Requested size: 171.14764pt x 159.15668pt.
  [5
 
  <./Image/Schéma modélisation.png>]
-<Image/Objectif en courbe.jpg, id=651, 770.88pt x 578.16pt>
+<Image Noé/ModelisationMP.png, id=669, 513.92pt x 177.66376pt>
+File: Image Noé/ModelisationMP.png Graphic file (type png)
+<use Image Noé/ModelisationMP.png>
+Package pdftex.def Info: Image Noé/ModelisationMP.png  used on input line 131.
+(pdftex.def)             Requested size: 171.14764pt x 59.16597pt.
+ [6
+
+ <./Image Noé/ModelisationMP.png>] [7
+
+] [8
+
+]
+<Image/Objectif en courbe.jpg, id=969, 770.88pt x 578.16pt>
 File: Image/Objectif en courbe.jpg Graphic file (type jpg)
 <use Image/Objectif en courbe.jpg>
-Package pdftex.def Info: Image/Objectif en courbe.jpg  used on input line 124.
+Package pdftex.def Info: Image/Objectif en courbe.jpg  used on input line 182.
 (pdftex.def)             Requested size: 239.60567pt x 179.70413pt.
 
-Overfull \vbox (7.0495pt too high) detected at line 124
+Overfull \vbox (7.0495pt too high) detected at line 182
  []
 
-[6
+[9
 
  <./Image/Objectif en courbe.jpg>]
-<Image/Modèle solide face échelle main.jpg, id=749, 2276.505pt x 4047.12pt>
+<Image/Modèle solide face échelle main.jpg, id=1069, 2276.505pt x 4047.12pt>
 File: Image/Modèle solide face échelle main.jpg Graphic file (type jpg)
 <use Image/Modèle solide face échelle main.jpg>
-Package pdftex.def Info: Image/Modèle solide face échelle main.jpg  used on input line 147.
+Package pdftex.def Info: Image/Modèle solide face échelle main.jpg  used on input line 205.
 (pdftex.def)             Requested size: 85.57382pt x 152.1001pt.
-<Image/Photo Mateïs échelle modèle solide.jpg, id=750, 2276.505pt x 4047.12pt>
+<Image/Photo Mateïs échelle modèle solide.jpg, id=1070, 2276.505pt x 4047.12pt>
 File: Image/Photo Mateïs échelle modèle solide.jpg Graphic file (type jpg)
 <use Image/Photo Mateïs échelle modèle solide.jpg>
-Package pdftex.def Info: Image/Photo Mateïs échelle modèle solide.jpg  used on input line 147.
+Package pdftex.def Info: Image/Photo Mateïs échelle modèle solide.jpg  used on input line 205.
 (pdftex.def)             Requested size: 85.57382pt x 152.1001pt.
-<Image/Modèle solide Profil.jpg, id=751, 2276.505pt x 4047.12pt>
+<Image/Modèle solide Profil.jpg, id=1071, 2276.505pt x 4047.12pt>
 File: Image/Modèle solide Profil.jpg Graphic file (type jpg)
 <use Image/Modèle solide Profil.jpg>
-Package pdftex.def Info: Image/Modèle solide Profil.jpg  used on input line 147.
+Package pdftex.def Info: Image/Modèle solide Profil.jpg  used on input line 205.
 (pdftex.def)             Requested size: 85.57382pt x 152.1001pt.
- [7
-
- <./Image/Modèle solide face échelle main.jpg> <./Image/Photo Mateïs échelle modèle solide.jpg> <./Image/Modèle solide Profil.jpg>]
-<Image/Tour flexible sur tableau blanc.jpg, id=849, 2276.505pt x 4047.12pt>
-File: Image/Tour flexible sur tableau blanc.jpg Graphic file (type jpg)
-<use Image/Tour flexible sur tableau blanc.jpg>
-Package pdftex.def Info: Image/Tour flexible sur tableau blanc.jpg  used on input line 167.
-(pdftex.def)             Requested size: 85.57382pt x 152.1001pt.
-<Image/modèle incorrect.png, id=850, 462.528pt x 346.896pt>
-File: Image/modèle incorrect.png Graphic file (type png)
-<use Image/modèle incorrect.png>
-Package pdftex.def Info: Image/modèle incorrect.png  used on input line 167.
-(pdftex.def)             Requested size: 256.72147pt x 192.55072pt.
-
-Overfull \vbox (19.34067pt too high) detected at line 167
- []
-
-[8
-
- <./Image/Tour flexible sur tableau blanc.jpg> <./Image/modèle incorrect.png>]
-<Image/schéma global.png, id=948, 963.6pt x 1003.75pt>
-File: Image/schéma global.png Graphic file (type png)
-<use Image/schéma global.png>
-Package pdftex.def Info: Image/schéma global.png  used on input line 196.
-(pdftex.def)             Requested size: 102.68962pt x 106.96674pt.
- [9
-
- <./Image/schéma global.png>]
-<Image/Problème de torsion.jpg, id=1046, 4023.03pt x 5364.04pt>
-File: Image/Problème de torsion.jpg Graphic file (type jpg)
-<use Image/Problème de torsion.jpg>
-Package pdftex.def Info: Image/Problème de torsion.jpg  used on input line 214.
-(pdftex.def)             Requested size: 119.80544pt x 159.68652pt.
-<Image/Cause de la torsion.jpg, id=1047, 4023.03pt x 5364.04pt>
-File: Image/Cause de la torsion.jpg Graphic file (type jpg)
-<use Image/Cause de la torsion.jpg>
-Package pdftex.def Info: Image/Cause de la torsion.jpg  used on input line 214.
-(pdftex.def)             Requested size: 119.80544pt x 159.68652pt.
  [10
 
- <./Image/Problème de torsion.jpg> <./Image/Cause de la torsion.jpg>]
-<Image/Pendule réglable 2.jpg, id=1144, 2276.505pt x 4047.12pt>
-File: Image/Pendule réglable 2.jpg Graphic file (type jpg)
-<use Image/Pendule réglable 2.jpg>
-Package pdftex.def Info: Image/Pendule réglable 2.jpg  used on input line 235.
-(pdftex.def)             Requested size: 119.80544pt x 212.92778pt.
+ <./Image/Modèle solide face échelle main.jpg> <./Image/Photo Mateïs échelle modèle solide.jpg> <./Image/Modèle solide Profil.jpg>]
+<Image/Tour flexible sur tableau blanc.jpg, id=1170, 2276.505pt x 4047.12pt>
+File: Image/Tour flexible sur tableau blanc.jpg Graphic file (type jpg)
+<use Image/Tour flexible sur tableau blanc.jpg>
+Package pdftex.def Info: Image/Tour flexible sur tableau blanc.jpg  used on input line 225.
+(pdftex.def)             Requested size: 85.57382pt x 152.1001pt.
+<Image/modèle incorrect.png, id=1171, 462.528pt x 346.896pt>
+File: Image/modèle incorrect.png Graphic file (type png)
+<use Image/modèle incorrect.png>
+Package pdftex.def Info: Image/modèle incorrect.png  used on input line 225.
+(pdftex.def)             Requested size: 256.72147pt x 192.55072pt.
 
-Overfull \vbox (48.17375pt too high) detected at line 235
+Overfull \vbox (19.34067pt too high) detected at line 225
  []
 
 [11
 
- <./Image/Pendule réglable 2.jpg>]
-<Image/Axe de l'ancien TIPE.jpg, id=1241, 5364.04pt x 4023.03pt>
-File: Image/Axe de l'ancien TIPE.jpg Graphic file (type jpg)
-<use Image/Axe de l'ancien TIPE.jpg>
-Package pdftex.def Info: Image/Axe de l'ancien TIPE.jpg  used on input line 264.
-(pdftex.def)             Requested size: 171.14764pt x 128.359pt.
+ <./Image/Tour flexible sur tableau blanc.jpg> <./Image/modèle incorrect.png>]
+<Image/schéma global.png, id=1271, 963.6pt x 1003.75pt>
+File: Image/schéma global.png Graphic file (type png)
+<use Image/schéma global.png>
+Package pdftex.def Info: Image/schéma global.png  used on input line 254.
+(pdftex.def)             Requested size: 102.68962pt x 106.96674pt.
  [12
 
- <./Image/Axe de l'ancien TIPE.jpg>]
-<Image/Imprimante.png, id=1338, 1284.8pt x 722.7pt>
-File: Image/Imprimante.png Graphic file (type png)
-<use Image/Imprimante.png>
-Package pdftex.def Info: Image/Imprimante.png  used on input line 274.
-(pdftex.def)             Requested size: 273.83728pt x 154.0321pt.
+ <./Image/schéma global.png>]
+<Image/Problème de torsion.jpg, id=1371, 4023.03pt x 5364.04pt>
+File: Image/Problème de torsion.jpg Graphic file (type jpg)
+<use Image/Problème de torsion.jpg>
+Package pdftex.def Info: Image/Problème de torsion.jpg  used on input line 272.
+(pdftex.def)             Requested size: 119.80544pt x 159.68652pt.
+<Image/Cause de la torsion.jpg, id=1372, 4023.03pt x 5364.04pt>
+File: Image/Cause de la torsion.jpg Graphic file (type jpg)
+<use Image/Cause de la torsion.jpg>
+Package pdftex.def Info: Image/Cause de la torsion.jpg  used on input line 272.
+(pdftex.def)             Requested size: 119.80544pt x 159.68652pt.
  [13
 
- <./Image/Imprimante.png (PNG copy)>]
-<Image/oscillation début.png, id=1436, 1284.8pt x 722.7pt>
-File: Image/oscillation début.png Graphic file (type png)
-<use Image/oscillation début.png>
-Package pdftex.def Info: Image/oscillation début.png  used on input line 293.
-(pdftex.def)             Requested size: 171.14764pt x 96.27007pt.
-<Image/oscillation fin.png, id=1437, 1284.8pt x 722.7pt>
-File: Image/oscillation fin.png Graphic file (type png)
-<use Image/oscillation fin.png>
-Package pdftex.def Info: Image/oscillation fin.png  used on input line 293.
-(pdftex.def)             Requested size: 171.14764pt x 96.27007pt.
- [14
+ <./Image/Problème de torsion.jpg> <./Image/Cause de la torsion.jpg>]
+<Image/Pendule réglable 2.jpg, id=1472, 2276.505pt x 4047.12pt>
+File: Image/Pendule réglable 2.jpg Graphic file (type jpg)
+<use Image/Pendule réglable 2.jpg>
+Package pdftex.def Info: Image/Pendule réglable 2.jpg  used on input line 293.
+(pdftex.def)             Requested size: 119.80544pt x 212.92778pt.
 
- <./Image/oscillation début.png (PNG copy)> <./Image/oscillation fin.png (PNG copy)>]
-<Image/Solution au décalage.png, id=1534, 1284.8pt x 722.7pt>
-File: Image/Solution au décalage.png Graphic file (type png)
-<use Image/Solution au décalage.png>
-Package pdftex.def Info: Image/Solution au décalage.png  used on input line 318.
-(pdftex.def)             Requested size: 102.68962pt x 57.76204pt.
-<Image/Mesure ruban imprimante.jpg, id=1535, 1927.2pt x 1084.05pt>
-File: Image/Mesure ruban imprimante.jpg Graphic file (type jpg)
-<use Image/Mesure ruban imprimante.jpg>
-Package pdftex.def Info: Image/Mesure ruban imprimante.jpg  used on input line 318.
-(pdftex.def)             Requested size: 102.68962pt x 57.76204pt.
-<Image/Soudure Carte imprimante récupérée.jpg, id=1536, 4023.03pt x 5364.04pt>
-File: Image/Soudure Carte imprimante récupérée.jpg Graphic file (type jpg)
-<use Image/Soudure Carte imprimante récupérée.jpg>
-Package pdftex.def Info: Image/Soudure Carte imprimante récupérée.jpg  used on input line 318.
-(pdftex.def)             Requested size: 102.68962pt x 136.85078pt.
+Overfull \vbox (48.17375pt too high) detected at line 293
+ []
+
+[14
+
+ <./Image/Pendule réglable 2.jpg>]
+<Image/Axe de l'ancien TIPE.jpg, id=1571, 5364.04pt x 4023.03pt>
+File: Image/Axe de l'ancien TIPE.jpg Graphic file (type jpg)
+<use Image/Axe de l'ancien TIPE.jpg>
+Package pdftex.def Info: Image/Axe de l'ancien TIPE.jpg  used on input line 322.
+(pdftex.def)             Requested size: 171.14764pt x 128.359pt.
  [15
 
- <./Image/Solution au décalage.png (PNG copy)> <./Image/Mesure ruban imprimante.jpg> <./Image/Soudure Carte imprimante récupérée.jpg>] [16
+ <./Image/Axe de l'ancien TIPE.jpg>]
+<Image/Imprimante.png, id=1670, 1284.8pt x 722.7pt>
+File: Image/Imprimante.png Graphic file (type png)
+<use Image/Imprimante.png>
+Package pdftex.def Info: Image/Imprimante.png  used on input line 332.
+(pdftex.def)             Requested size: 273.83728pt x 154.0321pt.
+ [16
+
+ <./Image/Imprimante.png (PNG copy)>]
+<Image/oscillation début.png, id=1769, 1284.8pt x 722.7pt>
+File: Image/oscillation début.png Graphic file (type png)
+<use Image/oscillation début.png>
+Package pdftex.def Info: Image/oscillation début.png  used on input line 351.
+(pdftex.def)             Requested size: 171.14764pt x 96.27007pt.
+<Image/oscillation fin.png, id=1770, 1284.8pt x 722.7pt>
+File: Image/oscillation fin.png Graphic file (type png)
+<use Image/oscillation fin.png>
+Package pdftex.def Info: Image/oscillation fin.png  used on input line 351.
+(pdftex.def)             Requested size: 171.14764pt x 96.27007pt.
+ [17
+
+ <./Image/oscillation début.png (PNG copy)> <./Image/oscillation fin.png (PNG copy)>]
+<Image/Solution au décalage.png, id=1869, 1284.8pt x 722.7pt>
+File: Image/Solution au décalage.png Graphic file (type png)
+<use Image/Solution au décalage.png>
+Package pdftex.def Info: Image/Solution au décalage.png  used on input line 376.
+(pdftex.def)             Requested size: 102.68962pt x 57.76204pt.
+<Image/Mesure ruban imprimante.jpg, id=1870, 1927.2pt x 1084.05pt>
+File: Image/Mesure ruban imprimante.jpg Graphic file (type jpg)
+<use Image/Mesure ruban imprimante.jpg>
+Package pdftex.def Info: Image/Mesure ruban imprimante.jpg  used on input line 376.
+(pdftex.def)             Requested size: 102.68962pt x 57.76204pt.
+<Image/Soudure Carte imprimante récupérée.jpg, id=1871, 4023.03pt x 5364.04pt>
+File: Image/Soudure Carte imprimante récupérée.jpg Graphic file (type jpg)
+<use Image/Soudure Carte imprimante récupérée.jpg>
+Package pdftex.def Info: Image/Soudure Carte imprimante récupérée.jpg  used on input line 376.
+(pdftex.def)             Requested size: 102.68962pt x 136.85078pt.
+ [18
+
+ <./Image/Solution au décalage.png (PNG copy)> <./Image/Mesure ruban imprimante.jpg> <./Image/Soudure Carte imprimante récupérée.jpg>] [19
 
 ]
-<Image/Schéma oscillateur position droite.drawio.png, id=1731, 833.1125pt x 612.2875pt>
+<Image/Schéma oscillateur position droite.drawio.png, id=2069, 833.1125pt x 612.2875pt>
 File: Image/Schéma oscillateur position droite.drawio.png Graphic file (type png)
 <use Image/Schéma oscillateur position droite.drawio.png>
-Package pdftex.def Info: Image/Schéma oscillateur position droite.drawio.png  used on input line 353.
+Package pdftex.def Info: Image/Schéma oscillateur position droite.drawio.png  used on input line 411.
 (pdftex.def)             Requested size: 171.14764pt x 125.78134pt.
-<Image/montage excentrique.png, id=1732, 633.567pt x 401.0985pt>
+<Image/montage excentrique.png, id=2070, 633.567pt x 401.0985pt>
 File: Image/montage excentrique.png Graphic file (type png)
 <use Image/montage excentrique.png>
-Package pdftex.def Info: Image/montage excentrique.png  used on input line 353.
+Package pdftex.def Info: Image/montage excentrique.png  used on input line 411.
 (pdftex.def)             Requested size: 171.14764pt x 108.347pt.
- [17
+ [20
 
  <./Image/Schéma oscillateur position droite.drawio.png> <./Image/montage excentrique.png>]
 File: Image/Schéma oscillateur position droite.drawio.png Graphic file (type png)
 <use Image/Schéma oscillateur position droite.drawio.png>
-Package pdftex.def Info: Image/Schéma oscillateur position droite.drawio.png  used on input line 369.
+Package pdftex.def Info: Image/Schéma oscillateur position droite.drawio.png  used on input line 427.
 (pdftex.def)             Requested size: 171.14764pt x 125.78134pt.
-<Image/Schéma oscillateur position gauche.png, id=1831, 1063.975pt x 657.45625pt>
+<Image/Schéma oscillateur position gauche.png, id=2171, 1063.975pt x 657.45625pt>
 File: Image/Schéma oscillateur position gauche.png Graphic file (type png)
 <use Image/Schéma oscillateur position gauche.png>
-Package pdftex.def Info: Image/Schéma oscillateur position gauche.png  used on input line 369.
+Package pdftex.def Info: Image/Schéma oscillateur position gauche.png  used on input line 427.
 (pdftex.def)             Requested size: 171.14764pt x 105.7469pt.
- [18
+ [21
 
  <./Image/Schéma oscillateur position gauche.png>]
-<Image/Excentrique.jpg, id=1929, 2276.505pt x 4047.12pt>
+<Image/Excentrique.jpg, id=2271, 2276.505pt x 4047.12pt>
 File: Image/Excentrique.jpg Graphic file (type jpg)
 <use Image/Excentrique.jpg>
-Package pdftex.def Info: Image/Excentrique.jpg  used on input line 396.
+Package pdftex.def Info: Image/Excentrique.jpg  used on input line 454.
 (pdftex.def)             Requested size: 102.68962pt x 182.54482pt.
 
-Overfull \vbox (19.73476pt too high) detected at line 396
+Overfull \vbox (19.73476pt too high) detected at line 454
  []
 
-[19
+[22
 
  <./Image/Excentrique.jpg>]
-<Image/Carte principale belle photo.JPG, id=2027, 932.7648pt x 624.4128pt>
+<Image/Carte principale belle photo.JPG, id=2370, 932.7648pt x 624.4128pt>
 File: Image/Carte principale belle photo.JPG Graphic file (type jpg)
 <use Image/Carte principale belle photo.JPG>
-Package pdftex.def Info: Image/Carte principale belle photo.JPG  used on input line 422.
+Package pdftex.def Info: Image/Carte principale belle photo.JPG  used on input line 480.
 (pdftex.def)             Requested size: 119.80544pt x 80.19514pt.
-<Image/Accéléromètre haut belle photo.JPG, id=2028, 932.7648pt x 624.4128pt>
+<Image/Accéléromètre haut belle photo.JPG, id=2371, 932.7648pt x 624.4128pt>
 File: Image/Accéléromètre haut belle photo.JPG Graphic file (type jpg)
 <use Image/Accéléromètre haut belle photo.JPG>
-Package pdftex.def Info: Image/Accéléromètre haut belle photo.JPG  used on input line 422.
+Package pdftex.def Info: Image/Accéléromètre haut belle photo.JPG  used on input line 480.
 (pdftex.def)             Requested size: 119.80544pt x 80.19514pt.
-<Image/Carte fixe belle photo.JPG, id=2029, 932.7648pt x 624.4128pt>
+<Image/Carte fixe belle photo.JPG, id=2372, 932.7648pt x 624.4128pt>
 File: Image/Carte fixe belle photo.JPG Graphic file (type jpg)
 <use Image/Carte fixe belle photo.JPG>
-Package pdftex.def Info: Image/Carte fixe belle photo.JPG  used on input line 422.
+Package pdftex.def Info: Image/Carte fixe belle photo.JPG  used on input line 480.
 (pdftex.def)             Requested size: 119.80544pt x 80.19514pt.
- [20
+ [23
 
- <./Image/Carte principale belle photo.JPG> <./Image/Accéléromètre haut belle photo.JPG> <./Image/Carte fixe belle photo.JPG>] [21
+ <./Image/Carte principale belle photo.JPG> <./Image/Accéléromètre haut belle photo.JPG> <./Image/Carte fixe belle photo.JPG>] [24
 
 ]
-<Image/masse_en_bas_(9.4gcm)_de__100g.pdf, id=2222, 722.7pt x 361.35pt>
-File: Image/masse_en_bas_(9.4gcm)_de__100g.pdf Graphic file (type pdf)
-<use Image/masse_en_bas_(9.4gcm)_de__100g.pdf>
-Package pdftex.def Info: Image/masse_en_bas_(9.4gcm)_de__100g.pdf  used on input line 445.
-(pdftex.def)             Requested size: 245.71474pt x 122.85738pt.
- [22
+<Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 9,4 cm.png, id=2569, 933.7284pt x 289.08pt>
+File: Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 9,4 cm.png Graphic file (type png)
+<use Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 9,4 cm.png>
+Package pdftex.def Info: Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 9,4 cm.png  used on input line 503.
+(pdftex.def)             Requested size: 273.83728pt x 84.7794pt.
+ [25
 
- <./Image/masse_en_bas_(9.4gcm)_de__100g.pdf>] [23
+ <./Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 9,4 cm.png>] [26
 
 ]
 File: Image/Objectif en courbe.jpg Graphic file (type jpg)
 <use Image/Objectif en courbe.jpg>
-Package pdftex.def Info: Image/Objectif en courbe.jpg  used on input line 461.
+Package pdftex.def Info: Image/Objectif en courbe.jpg  used on input line 519.
 (pdftex.def)             Requested size: 273.83728pt x 205.37614pt.
- [24
+ [27
 
 ]
-<Image/pendule_à_5_cm_de_l'axe_,_100g.pdf, id=2560, 722.7pt x 361.35pt>
-File: Image/pendule_à_5_cm_de_l'axe_,_100g.pdf Graphic file (type pdf)
-<use Image/pendule_à_5_cm_de_l'axe_,_100g.pdf>
-Package pdftex.def Info: Image/pendule_à_5_cm_de_l'axe_,_100g.pdf  used on input line 480.
-(pdftex.def)             Requested size: 231.26872pt x 115.63435pt.
-<Image/masse_à_8cm_de_73,3_g.pdf, id=2561, 722.7pt x 361.35pt>
-File: Image/masse_à_8cm_de_73,3_g.pdf Graphic file (type pdf)
-<use Image/masse_à_8cm_de_73,3_g.pdf>
-Package pdftex.def Info: Image/masse_à_8cm_de_73,3_g.pdf  used on input line 480.
-(pdftex.def)             Requested size: 231.26872pt x 115.63435pt.
+<Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 5 cm.png, id=2866, 933.7284pt x 289.08pt>
+File: Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 5 cm.png Graphic file (type png)
+<use Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 5 cm.png>
+Package pdftex.def Info: Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 5 cm.png  used on input line 538.
+(pdftex.def)             Requested size: 239.60567pt x 74.17978pt.
+<Image Noé/Données pi avec comparaison (Noé)/Pendule 73.3g à 9,4 cm.png, id=2867, 933.7284pt x 289.08pt>
+File: Image Noé/Données pi avec comparaison (Noé)/Pendule 73.3g à 9,4 cm.png Graphic file (type png)
+<use Image Noé/Données pi avec comparaison (Noé)/Pendule 73.3g à 9,4 cm.png>
+Package pdftex.def Info: Image Noé/Données pi avec comparaison (Noé)/Pendule 73.3g à 9,4 cm.png  used on input line 538.
+(pdftex.def)             Requested size: 239.60567pt x 74.17978pt.
 
-Overfull \vbox (94.60263pt too high) detected at line 480
+Overfull \vbox (11.69348pt too high) detected at line 538
  []
 
-[25
+[28
 
- <./Image/pendule_à_5_cm_de_l'axe_,_100g.pdf> <./Image/masse_à_8cm_de_73,3_g.pdf>]
-<Image/Montage dirac.jpg, id=2761, 4047.12pt x 2276.505pt>
+ <./Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 5 cm.png> <./Image Noé/Données pi avec comparaison (Noé)/Pendule 73.3g à 9,4 cm.png>]
+<Image/Montage dirac.jpg, id=2968, 4047.12pt x 2276.505pt>
 File: Image/Montage dirac.jpg Graphic file (type jpg)
 <use Image/Montage dirac.jpg>
-Package pdftex.def Info: Image/Montage dirac.jpg  used on input line 504.
+Package pdftex.def Info: Image/Montage dirac.jpg  used on input line 562.
 (pdftex.def)             Requested size: 171.14764pt x 96.25519pt.
- [26
+ [29
 
  <./Image/Montage dirac.jpg>]
-<Image/Dirac.png, id=2858, 1110.0672pt x 544.9158pt>
+<Image/Dirac.png, id=3067, 1110.0672pt x 544.9158pt>
 File: Image/Dirac.png Graphic file (type png)
 <use Image/Dirac.png>
-Package pdftex.def Info: Image/Dirac.png  used on input line 524.
+Package pdftex.def Info: Image/Dirac.png  used on input line 582.
 (pdftex.def)             Requested size: 342.2953pt x 168.02415pt.
 
-Overfull \vbox (38.3226pt too high) detected at line 524
+Overfull \vbox (38.3226pt too high) detected at line 582
  []
 
-[27
+[30
 
- <./Image/Dirac.png>] [28
+ <./Image/Dirac.png>] [31
 
 ]
 File: Image/Taipeï.jpg Graphic file (type jpg)
 <use Image/Taipeï.jpg>
-Package pdftex.def Info: Image/Taipeï.jpg  used on input line 598.
+Package pdftex.def Info: Image/Taipeï.jpg  used on input line 658.
 (pdftex.def)             Requested size: 151.47522pt x 100.21262pt.
- [29
+ [32
 
 ]
 File: Image/TMD pont.jpg Graphic file (type jpg)
 <use Image/TMD pont.jpg>
-Package pdftex.def Info: Image/TMD pont.jpg  used on input line 617.
+Package pdftex.def Info: Image/TMD pont.jpg  used on input line 677.
 (pdftex.def)             Requested size: 171.14764pt x 128.36009pt.
- [30
+ [33
 
 ]
+<Image/microsensor_microactuator.png, id=3333, 387.4475pt x 297.11pt>
+File: Image/microsensor_microactuator.png Graphic file (type png)
+<use Image/microsensor_microactuator.png>
+Package pdftex.def Info: Image/microsensor_microactuator.png  used on input line 697.
+(pdftex.def)             Requested size: 171.14764pt x 131.24562pt.
+ [34
+
+ <./Image/microsensor_microactuator.png>]
+<Image/pico w.jpg, id=3379, 621.32124pt x 428.60126pt>
+File: Image/pico w.jpg Graphic file (type jpg)
+<use Image/pico w.jpg>
+Package pdftex.def Info: Image/pico w.jpg  used on input line 717.
+(pdftex.def)             Requested size: 171.14764pt x 118.05862pt.
+ [35
+
+ <./Image/pico w.jpg>]
+<Image/base fixe.png, id=3425, 2112.09074pt x 1493.58pt>
+File: Image/base fixe.png Graphic file (type png)
+<use Image/base fixe.png>
+Package pdftex.def Info: Image/base fixe.png  used on input line 733.
+(pdftex.def)             Requested size: 171.14764pt x 121.01578pt.
+<Image/Base fixe pcb.png, id=3426, 811.23074pt x 458.9145pt>
+File: Image/Base fixe pcb.png Graphic file (type png)
+<use Image/Base fixe pcb.png>
+Package pdftex.def Info: Image/Base fixe pcb.png  used on input line 733.
+(pdftex.def)             Requested size: 171.14764pt x 96.81604pt.
+ [36
+
+ <./Image/base fixe.png> <./Image/Base fixe pcb.png>]
+<Image/SCH MAINboard mcu.png, id=3472, 2112.09074pt x 1493.58pt>
+File: Image/SCH MAINboard mcu.png Graphic file (type png)
+<use Image/SCH MAINboard mcu.png>
+Package pdftex.def Info: Image/SCH MAINboard mcu.png  used on input line 749.
+(pdftex.def)             Requested size: 171.14764pt x 121.01578pt.
+<Image/Sch mainboard sensor.png, id=3473, 2074.149pt x 835.923pt>
+File: Image/Sch mainboard sensor.png Graphic file (type png)
+<use Image/Sch mainboard sensor.png>
+Package pdftex.def Info: Image/Sch mainboard sensor.png  used on input line 749.
+(pdftex.def)             Requested size: 171.14764pt x 68.96704pt.
+ [37
+
+ <./Image/SCH MAINboard mcu.png> <./Image/Sch mainboard sensor.png>]
+<Image/mb pcb.png, id=3519, 625.1355pt x 434.8245pt>
+File: Image/mb pcb.png Graphic file (type png)
+<use Image/mb pcb.png>
+Package pdftex.def Info: Image/mb pcb.png  used on input line 755.
+(pdftex.def)             Requested size: 273.83728pt x 190.47409pt.
+
+Overfull \vbox (15.26404pt too high) detected at line 755
+ []
+
+[38
+
+ <./Image/mb pcb.png>]
 \tf@nav=\write6
 \openout6 = `beamer_presentation_v3.nav'.
 
@@ -1076,20 +1189,20 @@ Package pdftex.def Info: Image/TMD pont.jpg  used on input line 617.
 
  (beamer_presentation_v3.aux)
 Package rerunfilecheck Info: File `beamer_presentation_v3.out' has not changed.
-(rerunfilecheck)             Checksum: 9257E88BB56F8112C7227E04E0D62768;639.
+(rerunfilecheck)             Checksum: A4DBF358CB920610894A361624F9C5FC;718.
  ) 
 Here is how much of TeX's memory you used:
- 24485 strings out of 475389
- 484356 string characters out of 2777000
- 805298 words of memory out of 3000000
- 45238 multiletter control sequences out of 15000+600000
- 482731 words of font info for 63 fonts, out of 8000000 for 9000
+ 25493 strings out of 475389
+ 504342 string characters out of 2777000
+ 825851 words of memory out of 3000000
+ 46204 multiletter control sequences out of 15000+600000
+ 483076 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,20n,122p,469b,779s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1000.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss0600.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on beamer_presentation_v3.pdf (30 pages, 33557160 bytes).
+ 128i,20n,122p,469b,788s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1095.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss1000.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1000.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1440.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcss0600.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\franc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0600.pk><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssi8.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/franc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on beamer_presentation_v3.pdf (38 pages, 34440228 bytes).
 PDF statistics:
- 3536 PDF objects out of 3580 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 293 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3918 PDF objects out of 4296 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 341 words of extra memory for PDF output out of 10000 (max. 10000000)
 

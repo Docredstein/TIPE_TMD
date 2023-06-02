@@ -26,11 +26,11 @@ def clean() :
             out = []
             std = np.std(frame[:,i]) 
             mean = np.mean(frame[:,i])
-            for j in frame[:,i] :
-                if abs(j-mean)>10*std :
+            for j in len(frame[:,i]) :
+                if abs(frame[j,i]-mean)>10*std :
                     out.append(0)
                 else :
-                    out.append(j-mean)
+                    out.append(frame[j,i]-mean)
             mat.append(out)
         mat = np.transpose(mat) 
         #print(mat)
@@ -65,7 +65,7 @@ def end_freq(l:list,end_freq:float)->int :
         if l[i]>=end_freq :
             return i
     raise Exception("fréquence non trouvée")
-def bode()  : 
+def bode()  : #TODO : à changer, la phase n'est absolument pas fonctionnelle, le gain est à peu près cohérent 
     gain = []
     phase = []
     freq = []

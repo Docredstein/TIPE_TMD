@@ -8,6 +8,8 @@
 \usepackage{amssymb}
 \usepackage{mathrsfs}
 \usepackage{subfigure}
+\usepackage{empheq}
+
 % Ajouter le plan en haut
 \useoutertheme{infolines}
 \setbeamertemplate{headline}{
@@ -96,12 +98,68 @@
 				\end{figure}
 			\end{column}
 			\begin{column}{0.5\textwidth}
+				PDF à la masse : 
+				$M\ddot{x} = -kx -c\dot{x} + f(t)$\\
 				On a donc sans le pendule : $H=\frac{1}{1+j\frac{c}{k}\omega-\frac{M}{k}\omega^2}$ 
 				
 			\end{column}
 		\end{columns}
 	\end{frame}
+	\begin{frame}{Élaboration d'un modèle théorique}
+		\frametitle{Modélisation du système avec pendule}
+		Oscillations linéaires , on peut modéliser le pendule par un système masse ressort
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\centering
+					\includegraphics[width=1\textwidth]{Image Noé/ModelisationMP.png}
+					\caption{Modèle équivalent du système}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item m=Masse du pendule
+					\item M=Masse de la tour
+					\item $k_{1}$=Coefficient de raideur élastique du pendule
+					\item k=Coefficient de raideur élastique (Baguettes + bouchons dans notre modèle)
+					\item $h_{1}$= coefficient de frottement du pendule 
+					\item h=coefficient de frottement de la tour
+				\end{itemize}	
+			\end{column}
+		\end{columns}
+		
+	\end{frame}
 
+
+	\begin{frame}{Équations du système}
+		L'excitation extérieure est modélisée par une force $f_{0}(t)$ appliquée à la tour\vspace{12pt}
+		PFD à ${tour + TMD}$:
+		\begin{equation}\label{key}
+			M\ddot{x} + m(\ddot{x}+\ddot{u}) +h\dot{x} + kx = f_{0}(t)
+		\end{equation}\\
+		\vspace{12pt}
+		PFD  au TMD uniquement:
+		\begin{equation}
+			m(\ddot{x}+\ddot{u}) + h_{1}\dot{u} + k_{1}u = 0
+		\end{equation}\\
+	
+		
+	\end{frame}
+	
+	\begin{frame}{Fonctions de transfert du système}
+		
+	\begin{empheq}[left=\empheqlbrace]{align*}
+		H1(\omega)&=\frac{U}{X}= \frac{m\omega^{2}}{k_{1}+jh_{1}\omega-m\omega^{2}}\\
+		H2(\omega)&=\frac{X}{\frac{F_{0}}{k}}= \frac{1}{1+j\frac{h}{k}\omega-\frac{(M+m)}{k}\omega^2-\frac{H1(\omega)}{k}\omega^2}
+	\end{empheq}
+	\vspace{12 pt}
+	
+	H2 représente le rapport de l'amplitude de l'accélération ressentie par les occupants de  la tour et de l'amplitude de l'accélération extérieure que subit la tour
+	
+	
+		
+		
+	\end{frame}
 	\section{Maquette} 
 	\begin{frame}{Objectif de la Maquettisation}
 		\begin{columns}
@@ -439,7 +497,7 @@
 		\begin{figure}
 			
 		
-		\includegraphics[scale=0.34]{Image/masse_en_bas_(9.4gcm)_de__100g.pdf}
+		\includegraphics[width=0.8\textwidth]{Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 9,4 cm.png}
 	\caption{Réponse du système à une excitation sinusoïdale pour une masse de 100g à 9.4 cm }
 	\end{figure}
 \end{frame}
@@ -465,14 +523,14 @@
 		\frametitle{Première expérience:Réponse à une excitation sinusoïdale}	
 		\centering
 		\begin{figure}
-			\includegraphics[scale=0.32]{Image/pendule_à_5_cm_de_l'axe_,_100g.pdf}
+			\includegraphics[width=0.7\textwidth]{Image Noé/Données pi avec comparaison (Noé)/Pendule 100g à 5 cm.png}
 			\caption{Même réponse en montant la masse à 5cm}
 		\end{figure}
 			
 		\centering
 		\begin{figure}
-			\includegraphics[scale=0.32]{Image/masse_à_8cm_de_73,3_g.pdf}
-			\caption{cette fois çi en prennant 73.3g à 8cm}
+			\includegraphics[width=0.7\textwidth]{Image Noé/Données pi avec comparaison (Noé)/Pendule 73.3g à 9,4 cm.png}
+			\caption{cette fois çi en prennant 73.3g à 9.4cm}
 		\end{figure}
 		
 		
@@ -571,7 +629,9 @@
 	%	\frametitle{Annexe}
 	%	Graphique et explication des mesures des coefficients de raideur
 	%\end{frame}
-	\section{Annexe}
+
+	\appendix
+	\section*{Annexe}
 	\begin{frame}{Caractéristique des TMD en introduction}
 		\begin{columns}
 			
@@ -615,4 +675,82 @@
 			
 		\end{columns}
 	\end{frame}
-\end{document}
+	\begin{frame}{Accéléromètre utilisé}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/microsensor_microactuator.png}
+					\caption{\copyright www.mems-exchange.org}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item LSM6DS3
+					\item 6 degré de liberté 
+					\item $\pm 2$/$\pm 16$ g
+					\item $U(a)=0.122$ mg 
+					\item $N(a) = 90 \frac{\mu g}{\sqrt{Hz}}$ 
+				\end{itemize}
+			\end{column}
+			
+		\end{columns}
+	\end{frame}
+	\begin{frame}{Caractéristique du raspberry pi pico W} 
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/pico w.jpg}
+					\caption{Pico W}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{itemize}
+					\item Programmable en C++/Python 
+					\item 15€ 
+					\item 2 Coeurs M0+ 133 MHz 
+					\item FPU integré
+					\item Wifi 2.4 GHz
+				\end{itemize}
+			\end{column}
+		\end{columns}
+		
+	\end{frame}
+	\begin{frame}{Circuit imprimé fixe}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/base fixe.png}
+					\caption{branchement base fixe}
+				\end{figure}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/Base fixe pcb.png}
+					\caption{PCB base fixe}
+				\end{figure}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{Circuit imprimé principal}
+		\begin{columns}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/SCH MAINboard mcu.png}
+					\caption{Branchement Carte mère }
+				\end{figure}
+			\end{column}
+			\begin{column}{0.5\textwidth}
+				\begin{figure}
+					\includegraphics[width=\textwidth]{Image/Sch mainboard sensor.png}
+					\caption{Capteur de la carte mère}
+				\end{figure}
+			\end{column}
+		\end{columns}
+	\end{frame}
+	\begin{frame}{Schéma PCB}
+		\begin{figure}
+			\includegraphics[width=0.8\textwidth]{Image/mb pcb.png}
+			\caption{PCB carte mère}
+		\end{figure}
+	\end{frame}
+\end{document} 
